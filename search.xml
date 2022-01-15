@@ -21,14 +21,30 @@
   <entry>
     <title>建站公告</title>
     <url>/2022/01/01/1/</url>
-    <content><![CDATA[<p>欢迎来到本站，本站永久网址为<a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
-<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><h3 id="BUG反馈"><a href="#BUG反馈" class="headerlink" title="BUG反馈"></a>BUG反馈</h3><p>请移步<a href="https://github.com/muyangplus">Github</a></p>
+    <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
+<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="https://muyangplus.github.io/2022/01/01/2" 
+  title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
+
+
 ]]></content>
       <categories>
         <category>建站公告</category>
       </categories>
       <tags>
         <tag>站务</tag>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>问题反馈</title>
+    <url>/2022/01/01/2/</url>
+    <content><![CDATA[<h2 id="在评论区留下你的见解吧！"><a href="#在评论区留下你的见解吧！" class="headerlink" title="在评论区留下你的见解吧！"></a>在评论区留下你的见解吧！</h2>]]></content>
+      <categories>
+        <category>问题反馈</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
+        <tag>评论</tag>
       </tags>
   </entry>
 </search>
