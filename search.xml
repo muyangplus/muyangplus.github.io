@@ -4,7 +4,7 @@
     <title>建站公告</title>
     <url>/2022/01/01/1/</url>
     <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
-<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="https://muyangplus.github.io/2022/01/01/2" 
+<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="/about/#%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88" 
   title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
 
 
@@ -15,26 +15,6 @@
       <tags>
         <tag>站务</tag>
         <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>问题反馈</title>
-    <url>/2022/01/01/2/</url>
-    <content><![CDATA[<h2 id="在评论区留下你的见解吧！"><a href="#在评论区留下你的见解吧！" class="headerlink" title="在评论区留下你的见解吧！"></a>在评论区留下你的见解吧！</h2><div class="note danger simple"><p>注意：目前评论功能尚未配置完成，暂时无法使用！</p>
-</div>
-
-<div class="note info simple"><p>本站采取双评论模式</p>
-</div>
-
-<h3 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h3><p>Gitalk 需要登录 Github 账户</p>
-<h3 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h3><p>Valine 需要您提供您的邮箱来接受回复</p>
-]]></content>
-      <categories>
-        <category>问题反馈</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
-        <tag>评论</tag>
       </tags>
   </entry>
 </search>
