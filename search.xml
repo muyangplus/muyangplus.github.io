@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/01/01/0/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
     <title>建站公告</title>
     <url>/2022/01/01/1/</url>
     <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
@@ -38,7 +20,15 @@
   <entry>
     <title>问题反馈</title>
     <url>/2022/01/01/2/</url>
-    <content><![CDATA[<h2 id="在评论区留下你的见解吧！"><a href="#在评论区留下你的见解吧！" class="headerlink" title="在评论区留下你的见解吧！"></a>在评论区留下你的见解吧！</h2>]]></content>
+    <content><![CDATA[<h2 id="在评论区留下你的见解吧！"><a href="#在评论区留下你的见解吧！" class="headerlink" title="在评论区留下你的见解吧！"></a>在评论区留下你的见解吧！</h2><div class="note danger simple"><p>注意：目前评论功能尚未配置完成，暂时无法使用！</p>
+</div>
+
+<div class="note info simple"><p>本站采取双评论模式</p>
+</div>
+
+<h3 id="Gitalk"><a href="#Gitalk" class="headerlink" title="Gitalk"></a>Gitalk</h3><p>Gitalk 需要登录 Github 账户</p>
+<h3 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h3><p>Valine 需要您提供您的邮箱来接受回复</p>
+]]></content>
       <categories>
         <category>问题反馈</category>
       </categories>
