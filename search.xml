@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>NOI学习</title>
+    <url>/2022/01/25/2/</url>
+    <content><![CDATA[<h2 id="开始学习C"><a href="#开始学习C" class="headerlink" title="开始学习C++"></a>开始学习C++</h2>]]></content>
+      <categories>
+        <category>NOI</category>
+      </categories>
+      <tags>
+        <tag>NOI</tag>
+        <tag>C++</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>建站公告</title>
     <url>/2022/01/01/1/</url>
     <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
@@ -10,7 +23,7 @@
 
 ]]></content>
       <categories>
-        <category>建站公告</category>
+        <category>站务</category>
       </categories>
       <tags>
         <tag>站务</tag>
