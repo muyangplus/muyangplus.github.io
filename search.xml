@@ -18,15 +18,15 @@
       </tags>
   </entry>
   <entry>
-    <title>NOI学习</title>
+    <title>NOI C++学习</title>
     <url>/2022/01/25/2/</url>
-    <content><![CDATA[<h2 id="NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题分析"><a href="#例题分析" class="headerlink" title="例题分析"></a>例题分析</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">	int l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=2*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;&quot;周长=&quot;&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;&quot;面积=&quot;&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <content><![CDATA[<h2 id="NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题"><a href="#例题" class="headerlink" title="例题"></a>例题</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">	int l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=2*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;&quot;周长=&quot;&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;&quot;面积=&quot;&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>程序及源码 <a href="%5Cfiles%5Cnoi%5CNOI1-1%E4%BE%8B%E9%A2%98.zip">点击下载</a></p>
+<p>程序及源码 <a href="/files/noi/NOI1-1%E4%BE%8B%E9%A2%98.zip">点击下载</a></p>
 <h3 id="练习题"><a href="#练习题" class="headerlink" title="练习题"></a>练习题</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()&#123;</span><br><span class="line">	int h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*60+m;</span><br><span class="line">	s=m*60+s;</span><br><span class="line">	cout&lt;&lt;&quot;迟到了&quot;&lt;&lt;s&lt;&lt;&quot;秒&quot;&lt;&lt;endl;</span><br><span class="line">	return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>程序及源码 <a href="%5Cfiles%5Cnoi%5CNOI1-1%E7%BB%83%E4%B9%A0%E9%A2%98.zip">点击下载</a></p>
+<p>程序及源码 <a href="/files/noi/NOI1-1%E7%BB%83%E4%B9%A0%E9%A2%98.zip">点击下载</a></p>
 ]]></content>
       <categories>
         <category>NOI</category>
