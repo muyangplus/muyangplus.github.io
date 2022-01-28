@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>建站公告</title>
-    <url>/2022/01/01/1/</url>
-    <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
-<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="/about/#%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88" 
-  title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
-
-
-]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
-        <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>NOI C++学习</title>
     <url>/2022/01/25/2/</url>
     <content><![CDATA[<h2 id="NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
@@ -66,6 +49,23 @@
         <tag>NOI</tag>
         <tag>C++</tag>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>建站公告</title>
+    <url>/2022/01/01/1/</url>
+    <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
+<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="/about/#%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88" 
+  title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
+
+
+]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
+        <tag>公告</tag>
       </tags>
   </entry>
 </search>
