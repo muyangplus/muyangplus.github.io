@@ -1,6 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>建站公告</title>
+    <url>/2022/01/01/1/</url>
+    <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
+<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="/about/#%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88" 
+  title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
+
+
+]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>站务</tag>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
+    <url>/2022/01/25/2/</url>
+    <content><![CDATA[<h2 id="NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>附件：<br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.001">NOI1-1.zip.001</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.002">NOI1-1.zip.002</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.003">NOI1-1.zip.003</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.004">NOI1-1.zip.004</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.005">NOI1-1.zip.005</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.006">NOI1-1.zip.006</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.007">NOI1-1.zip.007</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.008">NOI1-1.zip.008</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.009">NOI1-1.zip.009</a></p>
+]]></content>
+      <categories>
+        <category>NOI</category>
+      </categories>
+      <tags>
+        <tag>NOI</tag>
+        <tag>C++</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NOI1-2《顺序结构程序设计范例》主讲人：宋新波</title>
     <url>/2022/01/26/3/</url>
     <content><![CDATA[<h2 id="NOI1-2《顺序结构程序设计范例》主讲人：宋新波"><a href="#NOI1-2《顺序结构程序设计范例》主讲人：宋新波" class="headerlink" title="NOI1-2《顺序结构程序设计范例》主讲人：宋新波"></a>NOI1-2《顺序结构程序设计范例》主讲人：宋新波</h2><h3 id="例题1：圆的问题"><a href="#例题1：圆的问题" class="headerlink" title="例题1：圆的问题"></a>例题1：圆的问题</h3><p>输入圆的半径，计算圆的周长和面积。</p>
@@ -90,47 +131,6 @@
 
 
 <p>附件：<br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.001">NOI2-1.zip.001</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.002">NOI2-1.zip.002</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.003">NOI2-1.zip.003</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.004">NOI2-1.zip.004</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.005">NOI2-1.zip.005</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.006">NOI2-1.zip.006</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.007">NOI2-1.zip.007</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.008">NOI2-1.zip.008</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.009">NOI2-1.zip.009</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI2-1.zip.010">NOI2-1.zip.010</a></p>
-]]></content>
-      <categories>
-        <category>NOI</category>
-      </categories>
-      <tags>
-        <tag>NOI</tag>
-        <tag>C++</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>建站公告</title>
-    <url>/2022/01/01/1/</url>
-    <content><![CDATA[<p>欢迎来到本站，本站永久网址为 <a href="https://muyangplus.github.io/">https://muyangplus.github.io</a>。</p>
-<h2 id="站务"><a href="#站务" class="headerlink" title="站务"></a>站务</h2><a class="btn-beautify blue" href="/about/#%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88" 
-  title="问题反馈"><i class="far fa-hand-point-right"></i><span>问题反馈</span></a>
-
-
-]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>站务</tag>
-        <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
-    <url>/2022/01/25/2/</url>
-    <content><![CDATA[<h2 id="NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#NOI1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>NOI1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>附件：<br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.001">NOI1-1.zip.001</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.002">NOI1-1.zip.002</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.003">NOI1-1.zip.003</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.004">NOI1-1.zip.004</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.005">NOI1-1.zip.005</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.006">NOI1-1.zip.006</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.007">NOI1-1.zip.007</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.008">NOI1-1.zip.008</a><br><i class="fa fa-file" aria-hiden="true"></i> <a href="/files/noi/NOI1-1.zip.009">NOI1-1.zip.009</a></p>
 ]]></content>
       <categories>
         <category>NOI</category>
