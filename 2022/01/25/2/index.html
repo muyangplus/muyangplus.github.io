@@ -203,7 +203,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
       envId: 'https://twikoo-blue-one.vercel.app/',
-      region: '',
+      region: 'na-siliconvalley',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
       }
@@ -213,7 +213,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
   const getCount = () => {
     twikoo.getCommentsCount({
       envId: 'https://twikoo-blue-one.vercel.app/',
-      region: '',
+      region: 'na-siliconvalley',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
