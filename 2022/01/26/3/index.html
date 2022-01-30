@@ -181,7 +181,7 @@ function loadGitalk () {
     var gitalk = new Gitalk(Object.assign({
       clientID: 'e76a5e5aa1af16e82025',
       clientSecret: '9b55ddb174b52568c1b0e6423a3f5c4421d09429',
-      repo: 'blog-comments',
+      repo: 'gitalk-comments',
       owner: 'muyangplus',
       admin: ['muyangplus'],
       id: 'c28456cd4c87ebf0fed669c0d05a254c',
@@ -216,7 +216,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'https://twikoo-blue-one.vercel.app/',
+      envId: 'muyangplus-twikoo-comments.vercel.app',
       region: 'na-siliconvalley',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
@@ -226,7 +226,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'https://twikoo-blue-one.vercel.app/',
+      envId: 'muyangplus-twikoo-comments.vercel.app',
       region: 'na-siliconvalley',
       urls: [window.location.pathname],
       includeReply: false
