@@ -216,7 +216,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: 'muyangplus-twikoo-comments.vercel.app',
+      envId: 'https://muyangplus-twikoo-comments.vercel.app/',
       region: 'na-siliconvalley',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.vemoji)'))
@@ -226,7 +226,7 @@ if ('Gitalk' === 'Gitalk' || !false) {
 
   const getCount = () => {
     twikoo.getCommentsCount({
-      envId: 'muyangplus-twikoo-comments.vercel.app',
+      envId: 'https://muyangplus-twikoo-comments.vercel.app/',
       region: 'na-siliconvalley',
       urls: [window.location.pathname],
       includeReply: false
