@@ -38,6 +38,99 @@
       </tags>
   </entry>
   <entry>
+    <title>NOI1-2《顺序结构程序设计范例》主讲人：宋新波</title>
+    <url>/2022/01/26/3/</url>
+    <content><![CDATA[<h2 id="1-2《顺序结构程序设计范例》主讲人：宋新波"><a href="#1-2《顺序结构程序设计范例》主讲人：宋新波" class="headerlink" title="1-2《顺序结构程序设计范例》主讲人：宋新波"></a>1-2《顺序结构程序设计范例》主讲人：宋新波</h2><h3 id="例题1：圆的问题"><a href="#例题1：圆的问题" class="headerlink" title="例题1：圆的问题"></a>例题1：圆的问题</h3><p>输入圆的半径，计算圆的周长和面积。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；半径，未知：面积和周长</span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">double</span> r,s,c;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">double</span> pi=<span class="number">3.14</span>;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;r;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	s=pi*r*r;</span><br><span class="line">	c=<span class="number">2</span>*pi*r;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;s=&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;,c=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="例题2：数的交换"><a href="#例题2：数的交换" class="headerlink" title="例题2：数的交换"></a>例题2：数的交换</h3><p>完善程序：输入两个数a,b，要求在运行程序后a,b的值发生了互换，程序主体代码如下：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line"><span class="comment">//请在此处完善程序</span></span><br><span class="line">cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
+
+<h4 id="法一："><a href="#法一：" class="headerlink" title="法一："></a>法一：</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b,t;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="comment">//请在此处完善程序</span></span><br><span class="line">	t=a;</span><br><span class="line">	a=b;</span><br><span class="line">	b=t;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="法二："><a href="#法二：" class="headerlink" title="法二："></a>法二：</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="comment">//请在此处完善程序</span></span><br><span class="line">	a=a+b;</span><br><span class="line">	b=a-b;</span><br><span class="line">	a=a-b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="例题3：反向输出"><a href="#例题3：反向输出" class="headerlink" title="例题3：反向输出"></a>例题3：反向输出</h3><p>编写程序：输入一个3位数a，要求计算a的反向值并输出。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；a，未知：a的反向值 </span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">int</span> a,b,ge,shi,bai;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;a;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	ge=a%<span class="number">10</span>;</span><br><span class="line">	shi=a/<span class="number">10</span>%<span class="number">10</span>;</span><br><span class="line">	bai=a/<span class="number">100</span>;</span><br><span class="line">	b=ge*<span class="number">100</span>+shi*<span class="number">10</span>+bai;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="例题4：鸡兔同笼"><a href="#例题4：鸡兔同笼" class="headerlink" title="例题4：鸡兔同笼"></a>例题4：鸡兔同笼</h3><p>问题描述：鸡和兔在同一个笼子中，笼中共有a个头，b只脚，求鸡和兔共有多少只？（保证有解）</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；头和脚的总数，未知：鸡和兔的数量 </span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">int</span> a,b,x,y;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	x=(<span class="number">4</span>*a-b)/<span class="number">2</span>;</span><br><span class="line">	y=(b<span class="number">-2</span>*a)/<span class="number">2</span>;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;鸡有&quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;只，兔子有&quot;</span>&lt;&lt;y&lt;&lt;<span class="string">&quot;只\n&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>附件：<br>【蓝奏云】<a href="https://muyangplus.lanzoub.com/b030sfmba">https://muyangplus.lanzoub.com/b030sfmba</a> <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看密码
+  </button><span class="hide-content">密码：muyang</span></span></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年3月学习记录</title>
+    <url>/2022/04/01/7/</url>
+    <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
+<h3 id="类型参数"><a href="#类型参数" class="headerlink" title="类型参数"></a>类型参数</h3><p>template<typename T><br>原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替。</p>
+<p>int len &#x3D; (int) sizeof(arr) &#x2F; sizeof(*arr);<br>计算动态数组长度公式：用数组占用空间除以指针占用空间</p>
+<h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
+<p>‘gets’ was not declared in this scope</p>
+<p>相关功能可以用fgets()函数代替。</p>
+<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><algorithm>
+
+
+
+<h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
+<h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
+<p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
+<h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
+<h2 id="本月代办："><a href="#本月代办：" class="headerlink" title="本月代办："></a>本月代办：</h2><h3 id="命名空间-1"><a href="#命名空间-1" class="headerlink" title="命名空间"></a>命名空间</h3><h3 id="STL："><a href="#STL：" class="headerlink" title="STL："></a>STL：</h3><h4 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h4><h4 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h4><h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><h4 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h4><h4 id="set"><a href="#set" class="headerlink" title="set"></a>set</h4><h4 id="mulyiset"><a href="#mulyiset" class="headerlink" title="mulyiset"></a>mulyiset</h4><h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
+</div>
+
+<div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
+</div>
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="NOIP真题"><a href="#NOIP真题" class="headerlink" title="NOIP真题"></a>NOIP真题</h3><p><a href="https://ti.luogu.com.cn/">https://ti.luogu.com.cn</a></p>
+<h3 id="几种排序算法"><a href="#几种排序算法" class="headerlink" title="几种排序算法"></a>几种排序算法</h3><p><a href="https://www.cnblogs.com/rope/p/12119391.html">https://www.cnblogs.com/rope/p/12119391.html</a></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NOI2-1《选择性结构程序设计1》主讲人：蔺洋</title>
     <url>/2022/01/28/4/</url>
     <content><![CDATA[<h2 id="2-1《选择性结构程序设计1》主讲人：蔺洋"><a href="#2-1《选择性结构程序设计1》主讲人：蔺洋" class="headerlink" title="2-1《选择性结构程序设计1》主讲人：蔺洋"></a>2-1《选择性结构程序设计1》主讲人：蔺洋</h2><h3 id="例题：解一元二次方程"><a href="#例题：解一元二次方程" class="headerlink" title="例题：解一元二次方程"></a>例题：解一元二次方程</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> a,b,c,d,x1,x2;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line">	d=b*b<span class="number">-4</span>*a*c;</span><br><span class="line">	x1=(-b+<span class="built_in">sqrt</span>(d))/(<span class="number">2</span>*a);</span><br><span class="line">	x2=(-b-<span class="built_in">sqrt</span>(d))/(<span class="number">2</span>*a);</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;x1=&quot;</span>&lt;&lt;x1&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;<span class="string">&quot;x2=&quot;</span>&lt;&lt;x2&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -96,66 +189,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NOI1-2《顺序结构程序设计范例》主讲人：宋新波</title>
-    <url>/2022/01/26/3/</url>
-    <content><![CDATA[<h2 id="1-2《顺序结构程序设计范例》主讲人：宋新波"><a href="#1-2《顺序结构程序设计范例》主讲人：宋新波" class="headerlink" title="1-2《顺序结构程序设计范例》主讲人：宋新波"></a>1-2《顺序结构程序设计范例》主讲人：宋新波</h2><h3 id="例题1：圆的问题"><a href="#例题1：圆的问题" class="headerlink" title="例题1：圆的问题"></a>例题1：圆的问题</h3><p>输入圆的半径，计算圆的周长和面积。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；半径，未知：面积和周长</span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">double</span> r,s,c;</span><br><span class="line">	<span class="keyword">const</span> <span class="keyword">double</span> pi=<span class="number">3.14</span>;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;r;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	s=pi*r*r;</span><br><span class="line">	c=<span class="number">2</span>*pi*r;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;s=&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;,c=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="例题2：数的交换"><a href="#例题2：数的交换" class="headerlink" title="例题2：数的交换"></a>例题2：数的交换</h3><p>完善程序：输入两个数a,b，要求在运行程序后a,b的值发生了互换，程序主体代码如下：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line"><span class="comment">//请在此处完善程序</span></span><br><span class="line">cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br></pre></td></tr></table></figure>
-
-<h4 id="法一："><a href="#法一：" class="headerlink" title="法一："></a>法一：</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b,t;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="comment">//请在此处完善程序</span></span><br><span class="line">	t=a;</span><br><span class="line">	a=b;</span><br><span class="line">	b=t;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="法二："><a href="#法二：" class="headerlink" title="法二："></a>法二：</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="comment">//请在此处完善程序</span></span><br><span class="line">	a=a+b;</span><br><span class="line">	b=a-b;</span><br><span class="line">	a=a-b;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="例题3：反向输出"><a href="#例题3：反向输出" class="headerlink" title="例题3：反向输出"></a>例题3：反向输出</h3><p>编写程序：输入一个3位数a，要求计算a的反向值并输出。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；a，未知：a的反向值 </span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">int</span> a,b,ge,shi,bai;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;a;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	ge=a%<span class="number">10</span>;</span><br><span class="line">	shi=a/<span class="number">10</span>%<span class="number">10</span>;</span><br><span class="line">	bai=a/<span class="number">100</span>;</span><br><span class="line">	b=ge*<span class="number">100</span>+shi*<span class="number">10</span>+bai;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="例题4：鸡兔同笼"><a href="#例题4：鸡兔同笼" class="headerlink" title="例题4：鸡兔同笼"></a>例题4：鸡兔同笼</h3><p>问题描述：鸡和兔在同一个笼子中，笼中共有a个头，b只脚，求鸡和兔共有多少只？（保证有解）</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；头和脚的总数，未知：鸡和兔的数量 </span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">int</span> a,b,x,y;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	x=(<span class="number">4</span>*a-b)/<span class="number">2</span>;</span><br><span class="line">	y=(b<span class="number">-2</span>*a)/<span class="number">2</span>;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;鸡有&quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;只，兔子有&quot;</span>&lt;&lt;y&lt;&lt;<span class="string">&quot;只\n&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>附件：<br>【蓝奏云】<a href="https://muyangplus.lanzoub.com/b030sfmba">https://muyangplus.lanzoub.com/b030sfmba</a> <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看密码
-  </button><span class="hide-content">密码：muyang</span></span></p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
