@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
-    <url>/2022/01/25/2/</url>
-    <content><![CDATA[<h2 id="1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>公告</title>
+    <url>/2022/01/01/1/</url>
+    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
+</div>
 
-
-
-<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>附件：<br>【蓝奏云】<a href="https://muyangplus.lanzoub.com/b030sfm9i">https://muyangplus.lanzoub.com/b030sfm9i</a> <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看密码
-  </button><span class="hide-content">密码：muyang</span></span></p>
-]]></content>
+<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
       <categories>
-        <category>C++</category>
+        <category>站务</category>
       </categories>
       <tags>
-        <tag>学习</tag>
+        <tag>公告</tag>
       </tags>
   </entry>
   <entry>
@@ -61,39 +52,26 @@
       </tags>
   </entry>
   <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+    <title>《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
+    <url>/2022/01/25/2/</url>
+    <content><![CDATA[<h2 id="1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>附件：<br>【蓝奏云】<a href="https://muyangplus.lanzoub.com/b030sfm9i">https://muyangplus.lanzoub.com/b030sfm9i</a> <span class="hide-inline"><button type="button" class="hide-button" style="background-color: #FF7242;color: #fff">查看密码
+  </button><span class="hide-content">密码：muyang</span></span></p>
+]]></content>
       <categories>
-        <category>加密内容</category>
+        <category>C++</category>
       </categories>
       <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022年3月31日公告</title>
-    <url>/2022/03/31/6/</url>
-    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>自公告发布之日起，本站推出“学习记录”项目。用于记录站长的C++学习经历。<br>学习记录会在每月1号早8:00（北京时间）发布（如有延期另行通知）。<br>第一期发布时间为2022年4月1日早8:00。</p>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><p>感谢 黄老师 对站长的大力支持。没有他的支持，就没有这个项目。</p>
-<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -158,6 +136,42 @@
       </tags>
   </entry>
   <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年3月31日公告</title>
+    <url>/2022/03/31/6/</url>
+    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>自公告发布之日起，本站推出“学习记录”项目。用于记录站长的C++学习经历。<br>学习记录会在每月1号早8:00（北京时间）发布（如有延期另行通知）。<br>第一期发布时间为2022年4月1日早8:00。</p>
+<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><p>感谢 黄老师 对站长的大力支持。没有他的支持，就没有这个项目。</p>
+<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2022年3月学习记录</title>
     <url>/2022/04/01/7/</url>
     <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
@@ -188,20 +202,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公告</title>
-    <url>/2022/01/01/1/</url>
-    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
-</div>
-
-<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
       </tags>
   </entry>
 </search>
