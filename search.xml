@@ -73,29 +73,6 @@
       </tags>
   </entry>
   <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2-1《选择性结构程序设计1》主讲人：蔺洋</title>
     <url>/2022/01/28/4/</url>
     <content><![CDATA[<h2 id="2-1《选择性结构程序设计1》主讲人：蔺洋"><a href="#2-1《选择性结构程序设计1》主讲人：蔺洋" class="headerlink" title="2-1《选择性结构程序设计1》主讲人：蔺洋"></a>2-1《选择性结构程序设计1》主讲人：蔺洋</h2><h3 id="例题：解一元二次方程"><a href="#例题：解一元二次方程" class="headerlink" title="例题：解一元二次方程"></a>例题：解一元二次方程</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cmath&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">double</span> a,b,c,d,x1,x2;</span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b&gt;&gt;c;</span><br><span class="line">	d=b*b<span class="number">-4</span>*a*c;</span><br><span class="line">	x1=(-b+<span class="built_in">sqrt</span>(d))/(<span class="number">2</span>*a);</span><br><span class="line">	x2=(-b-<span class="built_in">sqrt</span>(d))/(<span class="number">2</span>*a);</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;x1=&quot;</span>&lt;&lt;x1&lt;&lt;<span class="string">&#x27; &#x27;</span>&lt;&lt;<span class="string">&quot;x2=&quot;</span>&lt;&lt;x2&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -156,19 +133,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2022年3月31日公告</title>
-    <url>/2022/03/31/6/</url>
-    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>自公告发布之日起，本站推出“学习记录”项目。用于记录站长的C++学习经历。<br>学习记录会在每月1号早8:00（北京时间）发布（如有延期另行通知）。<br>第一期发布时间为2022年4月1日早8:00。</p>
-<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><p>感谢 黄老师 对站长的大力支持。没有他的支持，就没有这个项目。</p>
-<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022年3月学习记录</title>
     <url>/2022/04/01/7/</url>
     <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
@@ -199,6 +163,42 @@
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年3月31日公告</title>
+    <url>/2022/03/31/6/</url>
+    <content><![CDATA[<h2 id="详情"><a href="#详情" class="headerlink" title="详情"></a>详情</h2><p>自公告发布之日起，本站推出“学习记录”项目。用于记录站长的C++学习经历。<br>学习记录会在每月1号早8:00（北京时间）发布（如有延期另行通知）。<br>第一期发布时间为2022年4月1日早8:00。</p>
+<h2 id="鸣谢"><a href="#鸣谢" class="headerlink" title="鸣谢"></a>鸣谢</h2><p>感谢 黄老师 对站长的大力支持。没有他的支持，就没有这个项目。</p>
+<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>
