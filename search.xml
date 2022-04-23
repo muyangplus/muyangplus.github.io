@@ -15,28 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
-    <url>/2022/01/25/2/</url>
-    <content><![CDATA[<h2 id="1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>1-2《顺序结构程序设计范例》主讲人：宋新波</title>
     <url>/2022/01/26/3/</url>
     <content><![CDATA[<h2 id="1-2《顺序结构程序设计范例》主讲人：宋新波"><a href="#1-2《顺序结构程序设计范例》主讲人：宋新波" class="headerlink" title="1-2《顺序结构程序设计范例》主讲人：宋新波"></a>1-2《顺序结构程序设计范例》主讲人：宋新波</h2><h3 id="例题1：圆的问题"><a href="#例题1：圆的问题" class="headerlink" title="例题1：圆的问题"></a>例题1：圆的问题</h3><p>输入圆的半径，计算圆的周长和面积。</p>
@@ -60,6 +38,28 @@
 
 <h3 id="例题4：鸡兔同笼"><a href="#例题4：鸡兔同笼" class="headerlink" title="例题4：鸡兔同笼"></a>例题4：鸡兔同笼</h3><p>问题描述：鸡和兔在同一个笼子中，笼中共有a个头，b只脚，求鸡和兔共有多少只？（保证有解）</p>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="comment">//一、分析问题：已知；头和脚的总数，未知：鸡和兔的数量 </span></span><br><span class="line">	<span class="comment">//二、数据定义</span></span><br><span class="line">	<span class="keyword">int</span> a,b,x,y;</span><br><span class="line">	<span class="comment">//三、数据输入</span></span><br><span class="line">	cin&gt;&gt;a&gt;&gt;b;</span><br><span class="line">	<span class="comment">//四、数据计算</span></span><br><span class="line">	x=(<span class="number">4</span>*a-b)/<span class="number">2</span>;</span><br><span class="line">	y=(b<span class="number">-2</span>*a)/<span class="number">2</span>;</span><br><span class="line">	<span class="comment">//五、数据输出</span></span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;鸡有&quot;</span>&lt;&lt;x&lt;&lt;<span class="string">&quot;只，兔子有&quot;</span>&lt;&lt;y&lt;&lt;<span class="string">&quot;只\n&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《编程如此简单—C++程序设计入门》主讲人：朱全民</title>
+    <url>/2022/01/25/2/</url>
+    <content><![CDATA[<h2 id="1-1《编程如此简单—C-程序设计入门》主讲人：朱全民"><a href="#1-1《编程如此简单—C-程序设计入门》主讲人：朱全民" class="headerlink" title="1-1《编程如此简单—C++程序设计入门》主讲人：朱全民"></a>1-1《编程如此简单—C++程序设计入门》主讲人：朱全民</h2><h3 id="例题：长方形问题"><a href="#例题：长方形问题" class="headerlink" title="例题：长方形问题"></a>例题：长方形问题</h3><p>输入长方形的长l和宽w，计算长方形的周长c和面积s</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> l,w,c,s;</span><br><span class="line">	cin&gt;&gt;l&gt;&gt;w;</span><br><span class="line">	c=<span class="number">2</span>*(l+w);</span><br><span class="line">	s=l*w;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;周长=&quot;</span>&lt;&lt;c&lt;&lt;endl;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;面积=&quot;</span>&lt;&lt;s&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="练习题：时间计算"><a href="#练习题：时间计算" class="headerlink" title="练习题：时间计算"></a>练习题：时间计算</h3><p>吕布和貂蝉约会，貂蝉迟到了h小时m分钟s秒，请问貂蝉共迟到了多少秒，请编程让计算机回答。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> h,m,s;</span><br><span class="line">	cin&gt;&gt;h&gt;&gt;m&gt;&gt;s;</span><br><span class="line">	m=h*<span class="number">60</span>+m;</span><br><span class="line">	s=m*<span class="number">60</span>+s;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;迟到了&quot;</span>&lt;&lt;s&lt;&lt;<span class="string">&quot;秒&quot;</span>&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
