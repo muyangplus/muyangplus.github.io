@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>公告</title>
+    <url>/2022/01/01/1/</url>
+    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
+</div>
+
+<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>加密测试</title>
     <url>/2022/02/02/5/</url>
     <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
@@ -57,17 +71,25 @@
       </tags>
   </entry>
   <entry>
-    <title>公告</title>
-    <url>/2022/01/01/1/</url>
-    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
-</div>
-
-<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
+    <title>2022年5月学习记录</title>
+    <url>/2022/06/01/9/</url>
+    <content><![CDATA[]]></content>
       <categories>
-        <category>站务</category>
+        <category>C++</category>
       </categories>
       <tags>
-        <tag>公告</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年4月学习记录</title>
+    <url>/2022/05/01/8/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
