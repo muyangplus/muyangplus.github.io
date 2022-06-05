@@ -38,6 +38,32 @@
       </tags>
   </entry>
   <entry>
+    <title>2022年5月学习记录</title>
+    <url>/2022/06/01/9/</url>
+    <content><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/weixin_44297922/article/details/121496280">基于Opencv实现的简易汉字识别</a></p>
+<p><a href="https://blog.csdn.net/iracer/article/details/116051674">OpenCV4机器学习算法原理与编程实战（附部分模型下载地址）</a></p>
+<p><a href="https://blog.csdn.net/hacker_NO_007/article/details/123470483">戴口罩情境下的人脸识别demo</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/107719641">开源人脸口罩检测数据+模型+代码+在线网页体验，通通都开源</a></p>
+<h3 id="二维码识别"><a href="#二维码识别" class="headerlink" title="二维码识别"></a>二维码识别</h3><p>Detect 只检测<br>Decode 只解析<br>DetectAndDecode 检测并解析</p>
+<h2 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h2><h3 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://zhuanlan.zhihu.com/p/468100301">卷积神经网络 C++ 从零开始实现</a></p>
+<h3 id="forward-x2F-beackword-数据计算"><a href="#forward-x2F-beackword-数据计算" class="headerlink" title="forward&#x2F;beackword 数据计算"></a>forward&#x2F;beackword 数据计算</h3><p>顺推和逆推</p>
+<h2 id="卷积"><a href="#卷积" class="headerlink" title="卷积"></a>卷积</h2><h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><p>集散卷积</p>
+<p>连续卷积</p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://blog.csdn.net/bitcarmanlee/article/details/54729807">最容易理解的对卷积(convolution)的解释</a></p>
+<h2 id="交叉熵"><a href="#交叉熵" class="headerlink" title="交叉熵"></a>交叉熵</h2><h3 id="关键词-1"><a href="#关键词-1" class="headerlink" title="关键词"></a>关键词</h3><p>贝叶斯决策理论</p>
+<p>拟然函数</p>
+<p>概率密度函数</p>
+<h3 id="参考资料：-1"><a href="#参考资料：-1" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://zhuanlan.zhihu.com/p/115277553">损失函数：交叉熵详解</a></p>
+<h2 id="VS编译错误总结"><a href="#VS编译错误总结" class="headerlink" title="VS编译错误总结"></a>VS编译错误总结</h2><h3 id="LINK2005-和-C2352"><a href="#LINK2005-和-C2352" class="headerlink" title="LINK2005 和 C2352"></a>LINK2005 和 C2352</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sample</span> &#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Sample::<span class="built_in">test1</span>();</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2022年3月学习记录</title>
     <url>/2022/04/01/7/</url>
     <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
@@ -46,15 +72,14 @@
 <h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
 <p>‘gets’ was not declared in this scope</p>
 <p>相关功能可以用fgets()函数代替。</p>
-<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><algorithm>
-
+<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&lt;algorithm&gt;</span><br></pre></td></tr></table></figure>
 
 
 <h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
 <h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
 <p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
 <h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
-<h2 id="本月代办："><a href="#本月代办：" class="headerlink" title="本月代办："></a>本月代办：</h2><h3 id="命名空间-1"><a href="#命名空间-1" class="headerlink" title="命名空间"></a>命名空间</h3><h3 id="STL："><a href="#STL：" class="headerlink" title="STL："></a>STL：</h3><h4 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h4><h4 id="deque"><a href="#deque" class="headerlink" title="deque"></a>deque</h4><h4 id="list"><a href="#list" class="headerlink" title="list"></a>list</h4><h4 id="map"><a href="#map" class="headerlink" title="map"></a>map</h4><h4 id="pair"><a href="#pair" class="headerlink" title="pair"></a>pair</h4><h4 id="set"><a href="#set" class="headerlink" title="set"></a>set</h4><h4 id="mulyiset"><a href="#mulyiset" class="headerlink" title="mulyiset"></a>mulyiset</h4><h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
+<h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
 </div>
 
 <div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
@@ -71,20 +96,40 @@
       </tags>
   </entry>
   <entry>
-    <title>2022年5月学习记录</title>
-    <url>/2022/06/01/9/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022年4月学习记录</title>
+    <title>2022年4月学习记录 - 时间复杂度总结</title>
     <url>/2022/05/01/8/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><h3 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h3><div class="note info simple"><p>1.常数阶O(1)<br>2.对数阶O(log2n)<br>3.线性阶O(n)<br>4.线性对数阶O(nlog2n)<br>5.平方阶O(n2)<br>6.立方阶O(n3)<br>7.k次方阶O(nk)<br>8.指数阶O(2n)</p>
+</div>
+
+<h3 id="最坏时间和平均时间"><a href="#最坏时间和平均时间" class="headerlink" title="最坏时间和平均时间"></a>最坏时间和平均时间</h3><p>最坏情况下的时间复杂度是算法在任何输入实例上运行时间的上界，这就保证了算法的运行时间不会比任何更长。</p>
+<p>在最坏情况下的时间复杂度为T(n)&#x3D;O(n)，它表示对于任何输入实例,该算法的运行时间不可能大于O(n)。 </p>
+<p>平均时间复杂度是指所有可能的输入实例均以等概率出现的情况下，算法的期望运行时间。</p>
+<h3 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h3><div class="note info simple"><p>求解算法的时间复杂度的具体步骤是：<br>⑴ 找出算法中的基本语句：算法中执行次数最多的那条语句就是基本语句，通常是最内层循环的循环体。<br>⑵ 计算基本语句的执行次数的数量级：只需计算基本语句执行次数的数量级，这就意味着只要保证基本语句执行次数的函数中的最高次幂正确即可，可以忽略所有低次幂和最高次幂的系数。这样能够简化算法分析，并且使注意力集中在最重要的一点上：增长率。<br>⑶ 用大Ο记号表示算法的时间性能：将基本语句执行次数的数量级放入大Ο记号中。</p>
+</div>
+
+<h3 id="具体实例"><a href="#具体实例" class="headerlink" title="具体实例"></a>具体实例</h3><h4 id="O-1"><a href="#O-1" class="headerlink" title="O(1)"></a>O(1)</h4><p>常数阶，即时间复杂度不随着规模n的增大而增大。如果算法的执行时间不随着问题规模n的增加而增长，即使算法中有上千条语句，其执行时间也不过是一个较大的常数</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> x=<span class="number">91</span>; </span><br><span class="line"><span class="keyword">int</span> y=<span class="number">100</span>;</span><br><span class="line"><span class="keyword">while</span>(y&gt;<span class="number">0</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span>(x&gt;<span class="number">100</span>) &#123;</span><br><span class="line">        x=x<span class="number">-10</span>;</span><br><span class="line">        y--;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    x++;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>T(n)&#x3D;O(1)</p>
+<p>这个程序看起来有点吓人，总共循环运行了1000次，但是这段程序并没有n，因此它只是一个常数阶的函数</p>
+<h4 id="O-n"><a href="#O-n" class="headerlink" title="O(n)"></a>O(n)</h4><p>一次阶时间复杂度。耗费的时间与规模n成一阶线性关系。</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> n;</span><br><span class="line">cin &gt;&gt; n;</span><br><span class="line"><span class="keyword">while</span> (n--) &#123;</span><br><span class="line">    cout &lt;&lt; n &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="O-n-3"><a href="#O-n-3" class="headerlink" title="O(n^3)"></a>O(n^3)</h4><p>三阶线性关系。（n阶线性以此类推即可。）就好像矩阵相乘就永远是O（n^3 ）</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="keyword">int</span> total = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> n;</span><br><span class="line">cin &gt;&gt; n;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i != n; i++) &#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; j != i; j++) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> k = <span class="number">0</span>; j != j; k++) &#123;</span><br><span class="line">            total++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>内循环的执行次数虽然与问题规模n没有直接关系，但是却与外层循环的变量取值有关，而最外层循环的次数直接与n有关，因此可以从内层循环向外层分析语句的执行次数：则该程序段的时间复杂度为</p>
+<p>T(n)&#x3D;O(n^3 &#x2F;6+低次项)&#x3D;O(n^3)</p>
+<h3 id="常见的算法时间复杂度由小到大"><a href="#常见的算法时间复杂度由小到大" class="headerlink" title="常见的算法时间复杂度由小到大"></a>常见的算法时间复杂度由小到大</h3><p>Ο(1)＜Ο(log2(n)＜Ο(n)＜Ο(nlog2(n))＜Ο(n^2) ＜Ο(n^3) ＜…＜Ο(2^n) ＜Ο(n!)</p>
+<h3 id="分析法则"><a href="#分析法则" class="headerlink" title="分析法则"></a>分析法则</h3><p>在计算算法时间复杂度时有以下几个简单的程序分析法则:</p>
+<div class="note info simple"><p>一、对于一些简单的输入输出语句或赋值语句,近似认为需要O(1)时间</p>
+<p>二、对于顺序结构,需要依次执行一系列语句所用的时间可采用大O下”求和法则”<br>1.求和法则:是指若算法的2个部分时间复杂度分别为 T1(n)&#x3D;O(f(n))和 T2(n)&#x3D;O(g(n)),则 T1(n)+T2(n)&#x3D;O(max(f(n), g(n)))。特别地,若T1(m)&#x3D;O(f(m)), T2(n)&#x3D;O(g(n)),则 T1(m)+T2(n)&#x3D;O(f(m) + g(n))<br>2.对于选择结构,如if语句,它的主要时间耗费是在执行then字句或else字句所用的时间,需注意的是检验条件也需要O(1)时间</p>
+<p>三、对于循环结构,循环语句的运行时间主要体现在多次迭代中执行循环体以及检验循环条件的时间耗费,一般可用大O下”乘法法则”<br>1.乘法法则: 是指若算法的2个部分时间复杂度分别为 T1(n)&#x3D;O(f(n))和 T2(n)&#x3D;O(g(n)),则 T1*T2&#x3D;O(f(n)*g(n))<br>2.对于复杂的算法,可以将它分成几个容易估算的部分,然后利用求和法则和乘法法则技术整个算法的时间复杂度</p>
+<p>四.其他运算法则:<br>①.若g(n)&#x3D;O(f(n)),则O(f(n))+ O(g(n))&#x3D; O(f(n))<br>②.O(Cf(n)) &#x3D; O(f(n)),其中C是一个正常数</p>
+</div>
+
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/stary_yan/article/details/51383480">[C++]时间复杂度&amp;空间复杂度</a></p>
+]]></content>
       <categories>
         <category>C++</category>
       </categories>
