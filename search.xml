@@ -24,6 +24,20 @@
       </tags>
   </entry>
   <entry>
+    <title>公告</title>
+    <url>/2022/01/01/1/</url>
+    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
+</div>
+
+<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
+      <categories>
+        <category>站务</category>
+      </categories>
+      <tags>
+        <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>2022年3月学习记录</title>
     <url>/2022/04/01/7/</url>
     <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
@@ -79,20 +93,6 @@
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>公告</title>
-    <url>/2022/01/01/1/</url>
-    <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
-</div>
-
-<h6 id="最终解释权归-沐阳先生-所有"><a href="#最终解释权归-沐阳先生-所有" class="headerlink" title="最终解释权归 @沐阳先生 所有"></a>最终解释权归 @沐阳先生 所有</h6>]]></content>
-      <categories>
-        <category>站务</category>
-      </categories>
-      <tags>
-        <tag>公告</tag>
       </tags>
   </entry>
   <entry>
