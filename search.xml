@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2022年6月学习记录</title>
-    <url>/2022/07/01/10/</url>
-    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
-<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
-
-<h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
-<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>公告</title>
     <url>/2022/01/01/1/</url>
     <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
@@ -29,6 +12,228 @@
       </categories>
       <tags>
         <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年6月学习记录</title>
+    <url>/2022/07/01/10/</url>
+    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
+
+<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
+<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年3月学习记录</title>
+    <url>/2022/04/01/7/</url>
+    <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
+<h3 id="类型参数"><a href="#类型参数" class="headerlink" title="类型参数"></a>类型参数</h3><p>template<typename T><br>原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替。</p>
+<p>int len &#x3D; (int) sizeof(arr) &#x2F; sizeof(*arr);<br>计算动态数组长度公式：用数组占用空间除以指针占用空间</p>
+<h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
+<p>‘gets’ was not declared in this scope</p>
+<p>相关功能可以用fgets()函数代替。</p>
+<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&lt;algorithm&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
+<h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
+<p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
+<h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
+<h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
+</div>
+
+<div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
+</div>
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="P真题"><a href="#P真题" class="headerlink" title="P真题"></a>P真题</h3><p><a href="https://ti.luogu.com.cn/">https://ti.luogu.com.cn</a></p>
+<h3 id="几种排序算法"><a href="#几种排序算法" class="headerlink" title="几种排序算法"></a>几种排序算法</h3><p><a href="https://www.cnblogs.com/rope/p/12119391.html">https://www.cnblogs.com/rope/p/12119391.html</a></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何搭建一个高速私人网盘</title>
+    <url>/2022/07/16/11/</url>
+    <content><![CDATA[<h2 id="第一步：先期准备"><a href="#第一步：先期准备" class="headerlink" title="第一步：先期准备"></a>第一步：先期准备</h2><h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><p>请确保你有以下所有账号</p>
+<ul>
+<li>一个 <a href="https://signup.live.com/signup">OneDrive(微软)账号</a></li>
+<li>一个 <a href="https://github.com/signup">GitHub账号</a></li>
+<li>一个 <a href="https://vercel.com/signup">Vercel账号</a>（可使用 <a href="https://github.com/signup">GitHub账号</a> 注册）</li>
+</ul>
+<h3 id="注册OneDrive-微软-账号"><a href="#注册OneDrive-微软-账号" class="headerlink" title="注册OneDrive(微软)账号"></a>注册OneDrive(微软)账号</h3><div class="note simple"><p>本小结请选择阅读</p>
+</div>
+
+<h4 id="选择说明"><a href="#选择说明" class="headerlink" title="选择说明"></a>选择说明</h4><mark class="hl-label red">使用OneDrive账号时一定要注意账号类型！</mark> 
+
+<p>不同类型的OneDrive账号的区别(仅针对本目的)：</p>
+<table>
+<thead>
+<tr>
+<th>OneDrive账号类型</th>
+<th>难易程度</th>
+<th>安全性</th>
+<th>免费容量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>个人账号</td>
+<td>简单</td>
+<td>安全</td>
+<td>5GB</td>
+</tr>
+<tr>
+<td>临时教育账号</td>
+<td>繁琐</td>
+<td>不安全</td>
+<td>1TB</td>
+</tr>
+<tr>
+<td>教育账号(无法自行注册)</td>
+<td>繁琐</td>
+<td>安全</td>
+<td>1TB</td>
+</tr>
+</tbody></table>
+<h4 id="个人账号"><a href="#个人账号" class="headerlink" title="个人账号"></a>个人账号</h4><blockquote>
+<p>OneDrive(微软)账号注册链接 <a href="https://signup.live.com/signup">https://signup.live.com/signup</a></p>
+</blockquote>
+<h4 id="临时教育账号"><a href="#临时教育账号" class="headerlink" title="临时教育账号"></a>临时教育账号</h4><blockquote>
+<p>临时教育邮箱注册链接（一定要保留！！！） <a href="https://obagg.com/">https://obagg.com</a></p>
+</blockquote>
+<div class="note warning simple"><p>用户名越复杂越好<br>域类型请选择 <mark class="hl-label green">@5tb.tech</mark> </p>
+</div>
+
+<blockquote>
+<p>教育OneDrive(微软)账号注册链接 <a href="https://www.microsoft.com/zh-cn/education/products/office">https://www.microsoft.com/zh-cn/education/products/office</a></p>
+</blockquote>
+<h4 id="教育账号"><a href="#教育账号" class="headerlink" title="教育账号"></a>教育账号</h4><blockquote>
+<p>教育OneDrive(微软)账号注册链接 <a href="https://www.microsoft.com/zh-cn/education/products/office">https://www.microsoft.com/zh-cn/education/products/office</a></p>
+</blockquote>
+<h3 id="注册Github账号"><a href="#注册Github账号" class="headerlink" title="注册Github账号"></a>注册Github账号</h3><blockquote>
+<p>GitHub账号注册链接 <a href="https://github.com/signup">https://github.com/signup</a></p>
+</blockquote>
+<h3 id="注册Vercel账号"><a href="#注册Vercel账号" class="headerlink" title="注册Vercel账号"></a>注册Vercel账号</h3><blockquote>
+<p>Vercel账号注册链接 <a href="https://vercel.com/signup">https://vercel.com/signup</a></p>
+</blockquote>
+<h2 id="第二步：在-Vercel-中导入和部署"><a href="#第二步：在-Vercel-中导入和部署" class="headerlink" title="第二步：在 Vercel 中导入和部署"></a>第二步：在 Vercel 中导入和部署</h2><p>将 onedrive-vercel-index GitHub 项目导入 Vercel</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">https://github.com/spencerwooo/onedrive-vercel-index.git</span><br></pre></td></tr></table></figure>
+<p>然后点击部署。Vercel 将自动构建和部署您的项目。但是，部署可能会失败，因为您尚未添加环境变量，这就是我们接下来要做的。<mark class="hl-label default">REDIS_URL</mark> <br>如图：<br><img src="/./source/img/posts/11/2.1.1%E5%AF%BC%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%82%A8%E5%BA%93.png"><br><img src="/./source/img/posts/11/2.1.2%E5%AF%BC%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%82%A8%E5%BA%93.png"><br><img src="/./source/img/posts/11/2.1.3%E5%AF%BC%E5%85%A5%E7%AC%AC%E4%B8%89%E6%96%B9%E5%82%A8%E5%BA%93.png"></p>
+<h2 id="第三步：创建-Redis-连接"><a href="#第三步：创建-Redis-连接" class="headerlink" title="第三步：创建 Redis 连接"></a>第三步：创建 Redis 连接</h2><p>创建一个 Redis 数据库，并将 Redis 实例的 URL 设置为 Vercel 项目内的环境变量。Redis 数据库用于存储所需的内容以及与 OneDrive 的 API 接口时。<mark class="hl-label default">REDIS_URL</mark>  <mark class="hl-label default">access_tokens</mark>  <mark class="hl-label default">refresh_tokens</mark>  </p>
+<p>您可以使用 Upstash 来实现此目的，完全免费，与Vercel完全集成，这是我所演示的。<br>您还可以托管任何Redis服务器，使用AWS，Google Cloud，Azure等。只要你有一个Vercel可以使用的Redis URL。<br>无论你使用什么方法，在 Vercel 的环境变量中都应该有一个存在，它应该看起来像这样：<mark class="hl-label default">REDIS_URL</mark> </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">redis://:xxx...@some-thing-like-35533.upstash.io:35533</span><br></pre></td></tr></table></figure>
+<p>或：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rediss://:xxx...@some-thing-like-35533.upstash.io:35533</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用-Upstash-来创建-Redis-连接"><a href="#使用-Upstash-来创建-Redis-连接" class="headerlink" title="使用 Upstash 来创建 Redis 连接"></a>使用 Upstash 来创建 Redis 连接</h3><blockquote>
+<p><a href="https://docs.upstash.com/redis/howto/vercelintegration">官方文档</a></p>
+</blockquote>
+<ol>
+<li>将集成添加到您的 Vercel 帐户<br>访问 Vercel <a href="https://vercel.com/integrations/upstash">Upstash Integration</a> 网页，然后单击按钮。选择要集成的范围和应用程序。</li>
+<li>链接数据库<br>Vercel将显示一个弹出窗口，您可以在其中注册Upstash。然后，如果没有数据库，则可以创建一个数据库。<br><img src="https://docs.upstash.com/img/getting_started/create.png"></li>
+<li>拥有数据库后，您将看到一个页面，您可以在其中将Upstash数据库映射到Vercel应用程序。选择数据库和项目后，单击<mark class="hl-label default">New Integration</mark> 。<br><img src="https://docs.upstash.com/img/vercel/linkdb.png"></li>
+<li>现在点击，这样弹出窗口将关闭，您将返回到您的Vercel页面。<br><img src="https://docs.upstash.com/img/vercel/integration.png"></li>
+<li>获取你的 Redis 链接<br><img src="/./source/img/posts/11/redis.png"></li>
+</ol>
+<h2 id="第四步：配置网站"><a href="#第四步：配置网站" class="headerlink" title="第四步：配置网站"></a>第四步：配置网站</h2><h3 id="可选步骤：设置"><a href="#可选步骤：设置" class="headerlink" title="可选步骤：设置"></a>可选步骤：设置<mark class="hl-label default">NEXT_PUBLIC_USER_PRINCIPLE_NAME</mark> </h3><mark class="hl-label red">如果你使用的是临时教育账号，你必需额外执行此步骤</mark> 
+
+<p>打开 Vercel 项目的 设置(Settings) 。选择 环境变量(Environment Variables)</p>
+<mark class="hl-label default">Name</mark>  填 <mark class="hl-label default">NEXT_PUBLIC_USER_PRINCIPLE_NAME</mark> 
+<mark class="hl-label default">VALUE</mark>  填 你的临时教育账号
+<p>单击 添加(Add)</p>
+<h3 id="可选步骤：自定义域名"><a href="#可选步骤：自定义域名" class="headerlink" title="可选步骤：自定义域名"></a>可选步骤：自定义域名</h3><blockquote>
+<p><a href="https://vercel.com/docs/concepts/projects/custom-domains">https://vercel.com/docs/concepts/projects/custom-domains</a></p>
+</blockquote>
+<h3 id="修改配置"><a href="#修改配置" class="headerlink" title="修改配置"></a>修改配置</h3><p>需要进行一些基本的配置修改。两个配置文件包括 <mark class="hl-label default">config/site.config.js</mark>  和<mark class="hl-label default">config/api.config.js</mark>  。前者用于自定义您的网站，后者用于配置API路由。</p>
+<h4 id="自定义网站设置"><a href="#自定义网站设置" class="headerlink" title="自定义网站设置"></a>自定义网站设置</h4><p>根据您的配置修改 <mark class="hl-label default">config/site.config.js</mark> <br>您必须更改：</p>
+<ul>
+<li><mark class="hl-label default">userPrincipalName</mark>  
+
+<p>用于在进行OAuth时验证您的身份。它通常是您登录 OneDrive 时的 Microsoft 电子邮件地址。<br>注：如果你在之前的步骤中设置了<mark class="hl-label default">NEXT_PUBLIC_USER_PRINCIPLE_NAME</mark> 那你可以将此处留空或设为你的常用邮箱，否则你必需将此设置为你的 OneDrive(微软)账号</p>
+</li>
+<li><mark class="hl-label default">baseDirectory</mark> 
+
+<p>使用 onedrive-vercel-index 共享的基本文件夹。你必须确保该文件夹存在于你的 OneDrive 中。（你还可以创建一个在 OneDrive 中命名的文件夹，以保持与主项目相同的内容。<mark class="hl-label default">Public</mark> </p>
+</li>
+</ul>
+<div class="note primary simple"><p>还有其他可选配置可用于自定义站点，请参阅 <a href="https://ovi.swo.moe/docs/custom-configs">自定义</a> 配置以了解其功能。</p>
+</div>
+
+<h3 id="可选步骤：修改-API-设置"><a href="#可选步骤：修改-API-设置" class="headerlink" title="可选步骤：修改 API 设置"></a>可选步骤：修改 API 设置</h3><mark class="hl-label red">如果你是 OneDrive 国际版用户（不是 OneDrive 商业版或教育版帐户，不是 SharePoint 用户，不是 Microsoft 365 E5 用户），你可以忽略此步骤并保持原样，否则，你必须执行此步骤</mark> 
+
+<h4 id="如果你使用的是-个人-Outlook-微软-账户"><a href="#如果你使用的是-个人-Outlook-微软-账户" class="headerlink" title="如果你使用的是 个人 Outlook(微软)账户"></a>如果你使用的是 个人 Outlook(微软)账户</h4><p>你需要修改 <mark class="hl-label default">config/api.config.js</mark> </p>
+<ul>
+<li>authApi 和 driveApi<pre><code>authApi: &quot;https://login.partner.microsoftonline.cn/common/oauth2/v2.0/token&quot;,
+driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
+</code></pre>
+</li>
+</ul>
+<h4 id="如果你使用的是-临时-教育-Outlook-微软-账户"><a href="#如果你使用的是-临时-教育-Outlook-微软-账户" class="headerlink" title="如果你使用的是 (临时)教育 Outlook(微软)账户"></a>如果你使用的是 (临时)教育 Outlook(微软)账户</h4><p>你不需要做任何改动</p>
+<h2 id="第五步：验证您的-onedrive-vercel-index"><a href="#第五步：验证您的-onedrive-vercel-index" class="headerlink" title="第五步：验证您的 onedrive-vercel-index"></a>第五步：验证您的 onedrive-vercel-index</h2><p>导航到 vercel 新部署的 onedrive-vercel 索引，如果尚未设置自定义域，通常是 <a href="https://xxx.vercel.app.由于您尚未通过身份验证,您将被重定向到oauth进程./">https://xxx.vercel.app。由于您尚未通过身份验证，您将被重定向到OAuth进程。</a></p>
+<h3 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h3><p>检查有关已定义配置的任何不正确之处。特别是 和 （混淆），如果您使用 (临时)教育 Outlook(微软)账户 进行身份验证，则应该与主项目完全相同。还要检查 API 范围，只需要：<mark class="hl-label default">client_id</mark>  , <mark class="hl-label default">client_secret</mark> </p>
+<ul>
+<li>user.read：用于根据您用于OAuth的帐户检查您的电子邮件，以便某些人一遍又一遍地使用ta的帐户重新进行身份验证来“轰炸”你。</li>
+<li>files.read.all：用于访问 OneDrive 中的文件。</li>
+<li>offline_access： 离线访问<br>如果一切似乎正确，请继续执行步骤 2。如果没有，则需要在 Vercel 上修改和重新部署<mark class="hl-label default">config/api.config.js</mark> 。</li>
+</ul>
+<h3 id="获取身份验证代码"><a href="#获取身份验证代码" class="headerlink" title="获取身份验证代码"></a>获取身份验证代码</h3><p>基于我们为您生成了OAuth链接。单击该链接，将打开一个新选项卡，并提示您登录到您的Microsoft帐户。确保使用您在 中定义的同一帐户登录。</p>
+<div class="note warning simple"><p>如果您的帐户存在权限问题，则可能需要使用自己的帐户进行身份验证。这可能发生在 OneDrive 教育或业务用户身上。有关此内容的更多信息，请单击此处：<a href="https://ovi.swo.moe/docs/advanced#using-your-own-clientid-and-clientsecret-1">使用自己的客户端 ID 和机密</a>。</p>
+</div>
+
+<p>您将被定向到 ，将地址栏中的整个URL复制到下面的输入部分。onedrive-vercel-index 将从 URL 中提取 需要的信息。单击“获取令牌”以继续。</p>
+<h3 id="获取访问和刷新令牌"><a href="#获取访问和刷新令牌" class="headerlink" title="获取访问和刷新令牌"></a>获取访问和刷新令牌</h3><p>稍等片刻，因为令牌需要一点才能返回。如果一切顺利，您将收到以下消息：成功屏幕，其中包含一对有效令牌，供您存储在Redis数据库中。单击“存储令牌”以继续。</p>
+<div class="note red icon simple"><i class="note-icon fas fa-bullhorn"></i><p>在这里，我们将验证您是否真的是您，因此，如果按钮显示“不要假装是网站所有者”，请更改 <mark class="hl-label default">NEXT_PUBLIC_USER_PRINCIPLE_NAME</mark>  或 <mark class="hl-label default">userPrincipalName</mark>  </p>
+</div>
+
+<p>最后，您将被重定向到 onedrive-vercel-index。Enjoy it！</p>
+<div class="note warning simple"><p>如果您被重定向回步骤1，并且您确定所有内容都已正确设置，请稍等片刻，然后尝试手动导航回家并进行硬刷新。令牌有时需要一段时间才能传播到 Redis。</p>
+</div>
+
+
+
+]]></content>
+      <categories>
+        <category>干货</category>
+      </categories>
+      <tags>
+        <tag>教程 - OneDrive</tag>
+        <tag>GitHub</tag>
+        <tag>Vercel</tag>
+        <tag>Upstash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -74,29 +279,6 @@
       </tags>
   </entry>
   <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022年5月学习记录</title>
     <url>/2022/06/01/9/</url>
     <content><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/weixin_44297922/article/details/121496280">基于Opencv实现的简易汉字识别</a></p>
@@ -114,38 +296,6 @@
 <p>概率密度函数</p>
 <h3 id="参考资料：-1"><a href="#参考资料：-1" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://zhuanlan.zhihu.com/p/115277553">损失函数：交叉熵详解</a></p>
 <h2 id="VS编译错误总结"><a href="#VS编译错误总结" class="headerlink" title="VS编译错误总结"></a>VS编译错误总结</h2><h3 id="LINK2005-和-C2352"><a href="#LINK2005-和-C2352" class="headerlink" title="LINK2005 和 C2352"></a>LINK2005 和 C2352</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sample</span> &#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Sample::<span class="built_in">test1</span>();</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022年3月学习记录</title>
-    <url>/2022/04/01/7/</url>
-    <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
-<h3 id="类型参数"><a href="#类型参数" class="headerlink" title="类型参数"></a>类型参数</h3><p>template<typename T><br>原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替。</p>
-<p>int len &#x3D; (int) sizeof(arr) &#x2F; sizeof(*arr);<br>计算动态数组长度公式：用数组占用空间除以指针占用空间</p>
-<h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
-<p>‘gets’ was not declared in this scope</p>
-<p>相关功能可以用fgets()函数代替。</p>
-<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&lt;algorithm&gt;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
-<h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
-<p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
-<h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
-<h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
-</div>
-
-<div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
-</div>
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="P真题"><a href="#P真题" class="headerlink" title="P真题"></a>P真题</h3><p><a href="https://ti.luogu.com.cn/">https://ti.luogu.com.cn</a></p>
-<h3 id="几种排序算法"><a href="#几种排序算法" class="headerlink" title="几种排序算法"></a>几种排序算法</h3><p><a href="https://www.cnblogs.com/rope/p/12119391.html">https://www.cnblogs.com/rope/p/12119391.html</a></p>
 ]]></content>
       <categories>
         <category>C++</category>
