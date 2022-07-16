@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2022年6月学习记录</title>
-    <url>/2022/07/01/10/</url>
-    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
-<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
-
-<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
-<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>公告</title>
     <url>/2022/01/01/1/</url>
     <content><![CDATA[<h1 id="详情请到-关于本站-about-页面查看"><a href="#详情请到-关于本站-about-页面查看" class="headerlink" title="详情请到 关于本站(about) 页面查看"></a>详情请到 <a href="/about/">关于本站(about)</a> 页面查看</h1><h2 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h2><div class="note default simple"><p>本站页面的部分内容，包括但不限于图片、音频、视频，来源于网络。由于无法深究其原作者，因此未曾署名。若您是部分内容原作者，且不希望本站使用，可联系本人删除。</p>
@@ -29,6 +12,51 @@
       </categories>
       <tags>
         <tag>公告</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
+    <url>/2022/07/16/12/</url>
+    <content><![CDATA[<h3 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h3><p>GitHub 链接：<a href="https://github.com/muyangplus/QuickVerifies">https://github.com/muyangplus/QuickVerifies</a></p>
+<h2 id="第一步：前期准备"><a href="#第一步：前期准备" class="headerlink" title="第一步：前期准备"></a>第一步：前期准备</h2><h3 id="安装：OpenCV-4-5-5"><a href="#安装：OpenCV-4-5-5" class="headerlink" title="安装：OpenCV 4.5.5"></a>安装：OpenCV 4.5.5</h3><h4 id="Windows-安装"><a href="#Windows-安装" class="headerlink" title="Windows 安装"></a>Windows 安装</h4><p>下载并安装到 D盘 根目录（安装到其他目录后请自行更改 CMakeLists.txt:10 的 OpenCV 路径）</p>
+<blockquote>
+<p><a href="https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe">https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe</a></p>
+</blockquote>
+<h4 id="Linux-安装"><a href="#Linux-安装" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y cmake g++ wget unzip</span><br><span class="line">sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev</span><br><span class="line">sudo apt-get install libgtk2.0-dev</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line"><span class="built_in">cd</span> ../opt</span><br><span class="line">wget https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip</span><br><span class="line">unzip opencv.zip</span><br><span class="line">rm 4.5.5.zip</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> ..</span><br><span class="line">sudo make -j8</span><br><span class="line">sudo make install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>吐槽：真的很慢</p>
+<h3 id="安装：摄像头驱动"><a href="#安装：摄像头驱动" class="headerlink" title="安装：摄像头驱动"></a>安装：摄像头驱动</h3><p>Linux 系统请手动安装摄像头驱动</p>
+<h4 id="Linux-检测"><a href="#Linux-检测" class="headerlink" title="Linux 检测"></a>Linux 检测</h4><p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ls /dev/video*</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>则可看到”&#x2F;dev&#x2F;video*”表示成功驱动摄像头。否则请安装驱动并重插摄像头。</p>
+<h4 id="Windows-WLS2-下的-Linux-安装"><a href="#Windows-WLS2-下的-Linux-安装" class="headerlink" title="Windows WLS2 下的 Linux 安装"></a>Windows WLS2 下的 Linux 安装</h4><div class="note warning simple"><p>Windows WLS2 使用了此方法也不支持摄像头，使自行参照网上的方法重编译Linux内核<br>以下内容仅可以让 Windows WLS2 连接除摄像头以外的 USB设备</p>
+</div>
+
+<blockquote>
+<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
+</blockquote>
+<ol>
+<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
+<li>Linux 安装：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/<span class="built_in">local</span>/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Linux-安装-1"><a href="#Linux-安装-1" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><p>如果摄像头支持<a href="http://www.ideasonboard.org/uvc/">UVC驱动</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install cheese</span><br><span class="line">sudo apt install webcam</span><br><span class="line">cheese</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果你成功打开了摄像头则你已成功</p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>神经网络</tag>
+        <tag>OpenCV</tag>
+        <tag>C++</tag>
+        <tag>实战项目</tag>
       </tags>
   </entry>
   <entry>
@@ -182,47 +210,20 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </tags>
   </entry>
   <entry>
-    <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
-    <url>/2022/07/16/12/</url>
-    <content><![CDATA[<h2 id="第一步：前期准备"><a href="#第一步：前期准备" class="headerlink" title="第一步：前期准备"></a>第一步：前期准备</h2><h3 id="安装：OpenCV-4-5-5"><a href="#安装：OpenCV-4-5-5" class="headerlink" title="安装：OpenCV 4.5.5"></a>安装：OpenCV 4.5.5</h3><h4 id="Windows-安装"><a href="#Windows-安装" class="headerlink" title="Windows 安装"></a>Windows 安装</h4><p>下载并安装到 D盘 根目录（安装到其他目录后请自行更改 CMakeLists.txt:10 的 OpenCV 路径）</p>
-<blockquote>
-<p><a href="https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe">https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe</a></p>
-</blockquote>
-<h4 id="Linux-安装"><a href="#Linux-安装" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y cmake g++ wget unzip</span><br><span class="line">sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev</span><br><span class="line">sudo apt-get install libgtk2.0-dev</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line"><span class="built_in">cd</span> ../opt</span><br><span class="line">wget https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip</span><br><span class="line">unzip opencv.zip</span><br><span class="line">rm 4.5.5.zip</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> ..</span><br><span class="line">sudo make -j8</span><br><span class="line">sudo make install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+    <title>2022年6月学习记录</title>
+    <url>/2022/07/01/10/</url>
+    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
 
-<p>吐槽：真的很慢</p>
-<h3 id="安装：摄像头驱动"><a href="#安装：摄像头驱动" class="headerlink" title="安装：摄像头驱动"></a>安装：摄像头驱动</h3><p>Linux 系统请手动安装摄像头驱动</p>
-<h4 id="Linux-检测"><a href="#Linux-检测" class="headerlink" title="Linux 检测"></a>Linux 检测</h4><p>执行命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ls /dev/video*</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>则可看到”&#x2F;dev&#x2F;video*”表示成功驱动摄像头。否则请安装驱动并重插摄像头。</p>
-<h4 id="Windows-WLS2-下的-Linux-安装"><a href="#Windows-WLS2-下的-Linux-安装" class="headerlink" title="Windows WLS2 下的 Linux 安装"></a>Windows WLS2 下的 Linux 安装</h4><div class="note warning simple"><p>Windows WLS2 使用了此方法也不支持摄像头，使自行参照网上的方法重编译Linux内核<br>以下内容仅可以让 Windows WLS2 连接除摄像头以外的 USB设备</p>
-</div>
-
-<blockquote>
-<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
-</blockquote>
-<ol>
-<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
-<li>Linux 安装：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-</ol>
-<h4 id="Linux-安装-1"><a href="#Linux-安装-1" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><p>如果摄像头支持<a href="http://www.ideasonboard.org/uvc/">UVC驱动</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install cheese</span><br><span class="line">sudo apt install webcam</span><br><span class="line">cheese</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>如果你成功打开了摄像头则你已成功</p>
+<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
+<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
+</ul>
 ]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
-        <tag>人工智能</tag>
-        <tag>神经网络</tag>
-        <tag>OpenCV</tag>
-        <tag>C++</tag>
-        <tag>实战项目</tag>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -246,6 +247,32 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       <tags>
         <tag>加密内容</tag>
         <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年5月学习记录</title>
+    <url>/2022/06/01/9/</url>
+    <content><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/weixin_44297922/article/details/121496280">基于Opencv实现的简易汉字识别</a></p>
+<p><a href="https://blog.csdn.net/iracer/article/details/116051674">OpenCV4机器学习算法原理与编程实战（附部分模型下载地址）</a></p>
+<p><a href="https://blog.csdn.net/hacker_NO_007/article/details/123470483">戴口罩情境下的人脸识别demo</a></p>
+<p><a href="https://zhuanlan.zhihu.com/p/107719641">开源人脸口罩检测数据+模型+代码+在线网页体验，通通都开源</a></p>
+<h3 id="二维码识别"><a href="#二维码识别" class="headerlink" title="二维码识别"></a>二维码识别</h3><p>Detect 只检测<br>Decode 只解析<br>DetectAndDecode 检测并解析</p>
+<h2 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h2><h3 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://zhuanlan.zhihu.com/p/468100301">卷积神经网络 C++ 从零开始实现</a></p>
+<h3 id="forward-x2F-beackword-数据计算"><a href="#forward-x2F-beackword-数据计算" class="headerlink" title="forward&#x2F;beackword 数据计算"></a>forward&#x2F;beackword 数据计算</h3><p>顺推和逆推</p>
+<h2 id="卷积"><a href="#卷积" class="headerlink" title="卷积"></a>卷积</h2><h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><p>集散卷积</p>
+<p>连续卷积</p>
+<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://blog.csdn.net/bitcarmanlee/article/details/54729807">最容易理解的对卷积(convolution)的解释</a></p>
+<h2 id="交叉熵"><a href="#交叉熵" class="headerlink" title="交叉熵"></a>交叉熵</h2><h3 id="关键词-1"><a href="#关键词-1" class="headerlink" title="关键词"></a>关键词</h3><p>贝叶斯决策理论</p>
+<p>拟然函数</p>
+<p>概率密度函数</p>
+<h3 id="参考资料：-1"><a href="#参考资料：-1" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://zhuanlan.zhihu.com/p/115277553">损失函数：交叉熵详解</a></p>
+<h2 id="VS编译错误总结"><a href="#VS编译错误总结" class="headerlink" title="VS编译错误总结"></a>VS编译错误总结</h2><h3 id="LINK2005-和-C2352"><a href="#LINK2005-和-C2352" class="headerlink" title="LINK2005 和 C2352"></a>LINK2005 和 C2352</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sample</span> &#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Sample::<span class="built_in">test1</span>();</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
   <entry>
@@ -314,32 +341,6 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
 </div>
 
 <h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/stary_yan/article/details/51383480">[C++]时间复杂度&amp;空间复杂度</a></p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2022年5月学习记录</title>
-    <url>/2022/06/01/9/</url>
-    <content><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/weixin_44297922/article/details/121496280">基于Opencv实现的简易汉字识别</a></p>
-<p><a href="https://blog.csdn.net/iracer/article/details/116051674">OpenCV4机器学习算法原理与编程实战（附部分模型下载地址）</a></p>
-<p><a href="https://blog.csdn.net/hacker_NO_007/article/details/123470483">戴口罩情境下的人脸识别demo</a></p>
-<p><a href="https://zhuanlan.zhihu.com/p/107719641">开源人脸口罩检测数据+模型+代码+在线网页体验，通通都开源</a></p>
-<h3 id="二维码识别"><a href="#二维码识别" class="headerlink" title="二维码识别"></a>二维码识别</h3><p>Detect 只检测<br>Decode 只解析<br>DetectAndDecode 检测并解析</p>
-<h2 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h2><h3 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://zhuanlan.zhihu.com/p/468100301">卷积神经网络 C++ 从零开始实现</a></p>
-<h3 id="forward-x2F-beackword-数据计算"><a href="#forward-x2F-beackword-数据计算" class="headerlink" title="forward&#x2F;beackword 数据计算"></a>forward&#x2F;beackword 数据计算</h3><p>顺推和逆推</p>
-<h2 id="卷积"><a href="#卷积" class="headerlink" title="卷积"></a>卷积</h2><h3 id="关键词"><a href="#关键词" class="headerlink" title="关键词"></a>关键词</h3><p>集散卷积</p>
-<p>连续卷积</p>
-<h3 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://blog.csdn.net/bitcarmanlee/article/details/54729807">最容易理解的对卷积(convolution)的解释</a></p>
-<h2 id="交叉熵"><a href="#交叉熵" class="headerlink" title="交叉熵"></a>交叉熵</h2><h3 id="关键词-1"><a href="#关键词-1" class="headerlink" title="关键词"></a>关键词</h3><p>贝叶斯决策理论</p>
-<p>拟然函数</p>
-<p>概率密度函数</p>
-<h3 id="参考资料：-1"><a href="#参考资料：-1" class="headerlink" title="参考资料："></a>参考资料：</h3><p><a href="https://zhuanlan.zhihu.com/p/115277553">损失函数：交叉熵详解</a></p>
-<h2 id="VS编译错误总结"><a href="#VS编译错误总结" class="headerlink" title="VS编译错误总结"></a>VS编译错误总结</h2><h3 id="LINK2005-和-C2352"><a href="#LINK2005-和-C2352" class="headerlink" title="LINK2005 和 C2352"></a>LINK2005 和 C2352</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Sample</span> &#123;</span></span><br><span class="line">	<span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">test1</span><span class="params">()</span></span>;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">Sample::<span class="built_in">test1</span>();</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>C++</category>
