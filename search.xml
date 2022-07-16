@@ -15,46 +15,6 @@
       </tags>
   </entry>
   <entry>
-    <title>2022年6月学习记录</title>
-    <url>/2022/07/01/10/</url>
-    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
-<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
-
-<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
-<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
-</ul>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何搭建一个高速私人网盘</title>
     <url>/2022/07/16/11/</url>
     <content><![CDATA[<h2 id="第一步：先期准备"><a href="#第一步：先期准备" class="headerlink" title="第一步：先期准备"></a>第一步：先期准备</h2><h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><p>请确保你有以下所有账号</p>
@@ -202,6 +162,90 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
         <tag>GitHub</tag>
         <tag>Vercel</tag>
         <tag>Upstash</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年6月学习记录</title>
+    <url>/2022/07/01/10/</url>
+    <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
+<figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
+
+<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
+<li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
+</ul>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>QuickVerifies：一个基于 OpenCV 的人脸系统</title>
+    <url>/2022/07/16/12/</url>
+    <content><![CDATA[<h2 id="第一步：前期准备"><a href="#第一步：前期准备" class="headerlink" title="第一步：前期准备"></a>第一步：前期准备</h2><h3 id="安装：OpenCV-4-5-5"><a href="#安装：OpenCV-4-5-5" class="headerlink" title="安装：OpenCV 4.5.5"></a>安装：OpenCV 4.5.5</h3><h4 id="Windows-安装"><a href="#Windows-安装" class="headerlink" title="Windows 安装"></a>Windows 安装</h4><p>下载并安装到 D盘 根目录（安装到其他目录后请自行更改 CMakeLists.txt:10 的 OpenCV 路径）</p>
+<blockquote>
+<p><a href="https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe">https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe</a></p>
+</blockquote>
+<h4 id="Linux-安装"><a href="#Linux-安装" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y cmake g++ wget unzip</span><br><span class="line">sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev</span><br><span class="line">sudo apt-get install libgtk2.0-dev</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line"><span class="built_in">cd</span> ../opt</span><br><span class="line">wget https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip</span><br><span class="line">unzip opencv.zip</span><br><span class="line">rm 4.5.5.zip</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> ..</span><br><span class="line">sudo make -j8</span><br><span class="line">sudo make install</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>吐槽：真的很慢</p>
+<h3 id="安装：摄像头驱动"><a href="#安装：摄像头驱动" class="headerlink" title="安装：摄像头驱动"></a>安装：摄像头驱动</h3><p>Linux 系统请手动安装摄像头驱动</p>
+<h4 id="Linux-检测"><a href="#Linux-检测" class="headerlink" title="Linux 检测"></a>Linux 检测</h4><p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ls /dev/video*</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>则可看到”&#x2F;dev&#x2F;video*”表示成功驱动摄像头。否则请安装驱动并重插摄像头。</p>
+<h4 id="Windows-WLS2-下的-Linux-安装"><a href="#Windows-WLS2-下的-Linux-安装" class="headerlink" title="Windows WLS2 下的 Linux 安装"></a>Windows WLS2 下的 Linux 安装</h4><div class="note warning simple"><p>Windows WLS2 默认不知处摄像头，使前请重编译带USB驱动的Linux内核</p>
+</div>
+
+<blockquote>
+<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
+</blockquote>
+<ol>
+<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
+<li>Linux 安装：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/local/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ol>
+<h4 id="Linux-安装-1"><a href="#Linux-安装-1" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><p>如果摄像头支持<a href="http://www.ideasonboard.org/uvc/">UVC驱动</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install cheese</span><br><span class="line">sudo apt install webcam</span><br><span class="line">cheese</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>如果你成功打开了摄像头则你已成功</p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>神经网络</tag>
+        <tag>OpenCV</tag>
+        <tag>C++</tag>
+        <tag>实战项目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
