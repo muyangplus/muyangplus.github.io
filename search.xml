@@ -225,61 +225,6 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </tags>
   </entry>
   <entry>
-    <title>如何让你的 Windows WSL 连接摄像头</title>
-    <url>/2022/07/18/13/</url>
-    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><div class="note danger simple"><p>本文尚未完工！！！</p>
-</div>
-
-<h2 id="第一步：下载文件（本步骤尚不完全）"><a href="#第一步：下载文件（本步骤尚不完全）" class="headerlink" title="第一步：下载文件（本步骤尚不完全）"></a>第一步：下载文件（本步骤尚不完全）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你需要安装的东西</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line">sudo apt-get install libncurses*</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt-get build-dep linux</span><br><span class="line">sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot</span><br><span class="line"><span class="comment"># 创建：kernel文件夹</span></span><br><span class="line">mkdir ~/kernel</span><br><span class="line"><span class="comment"># 打开：kernel文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/kernel</span><br><span class="line"><span class="comment"># 清华大学镜像：linux内核</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 解压：linux内核</span></span><br><span class="line">tar -xf linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 清华大学镜像：rt补丁</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/projects/rt/5.10/older/patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 解压：rt补丁</span></span><br><span class="line">gunzip patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 打开：linux内核文件夹</span></span><br><span class="line"><span class="built_in">cd</span> linux-5.10.100</span><br><span class="line"><span class="comment"># 博主网盘镜像：wsl-config</span></span><br><span class="line">wget -O .config https://pan.muyangplus.vercel.app/api/name/.config?path=/博客附件/12/.config</span><br><span class="line"><span class="comment"># 安装：rt补丁</span></span><br><span class="line">patch -p1 &lt; ../patch-5.10.100-rt62.patch</span><br></pre></td></tr></table></figure>
-
-<p>make menuconfig</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">│ Symbol: USB_CONFIGFS_F_UVC [=n]                                                                     │</span><br><span class="line">│ Type  : bool                                                                                        │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:448                                                           │</span><br><span class="line">│   Prompt: USB Webcam function                                                                       │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4L2 [=n] &amp;&amp; VIDEO_ │</span><br><span class="line">│   Location:                                                                                         │</span><br><span class="line">│     -&gt; Device Drivers                                                                               │</span><br><span class="line">│       -&gt; USB support (USB_SUPPORT [=y])                                                             │</span><br><span class="line">│ (1)     -&gt; USB Gadget Support (USB_GADGET [=n])                                                     │</span><br><span class="line">│           -&gt; USB Gadget functions configurable through configfs (USB_CONFIGFS [=n])                 │</span><br><span class="line">│ Selects: VIDEOBUF2_VMALLOC [=n] &amp;&amp; USB_F_UVC [=n]                                                   │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│ Symbol: USB_F_UVC [=n]                                                                              │</span><br><span class="line">│ Type  : tristate                                                                                    │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:204                                                           │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n]                                                   │</span><br><span class="line">│ Selected by [n]:                                                                                    │</span><br><span class="line">│   - USB_CONFIGFS_F_UVC [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4 │</span><br><span class="line">│   - USB_G_WEBCAM [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; VIDEO_V4L2 [=n]</span><br></pre></td></tr></table></figure>
-
-<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><blockquote>
-<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
-</blockquote>
-<ol>
-<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
-<li>Linux 安装：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/<span class="built_in">local</span>/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
-<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br></pre></td></tr></table></figure></li>
-<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>参考资料：<br><a href="https://zhuanlan.zhihu.com/p/509248038">https://zhuanlan.zhihu.com/p/509248038</a><br><a href="https://blog.csdn.net/weixin_34408918/article/details/116737822">https://blog.csdn.net/weixin_34408918/article/details/116737822</a></p>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>WSL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022年3月学习记录</title>
     <url>/2022/04/01/7/</url>
     <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
@@ -351,6 +296,61 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何让你的 Windows WSL 连接摄像头</title>
+    <url>/2022/07/18/13/</url>
+    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><div class="note danger simple"><p>本文尚未完工！！！</p>
+</div>
+
+<h2 id="第一步：下载文件（本步骤尚不完全）"><a href="#第一步：下载文件（本步骤尚不完全）" class="headerlink" title="第一步：下载文件（本步骤尚不完全）"></a>第一步：下载文件（本步骤尚不完全）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你需要安装的东西</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line">sudo apt-get install libncurses*</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt-get build-dep linux</span><br><span class="line">sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot</span><br><span class="line"><span class="comment"># 创建：kernel文件夹</span></span><br><span class="line">mkdir ~/kernel</span><br><span class="line"><span class="comment"># 打开：kernel文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/kernel</span><br><span class="line"><span class="comment"># 清华大学镜像：linux内核</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 解压：linux内核</span></span><br><span class="line">tar -xf linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 清华大学镜像：rt补丁</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/projects/rt/5.10/older/patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 解压：rt补丁</span></span><br><span class="line">gunzip patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 打开：linux内核文件夹</span></span><br><span class="line"><span class="built_in">cd</span> linux-5.10.100</span><br><span class="line"><span class="comment"># 博主网盘镜像：wsl-config</span></span><br><span class="line">wget -O .config https://pan.muyangplus.vercel.app/api/name/.config?path=/博客附件/12/.config</span><br><span class="line"><span class="comment"># 安装：rt补丁</span></span><br><span class="line">patch -p1 &lt; ../patch-5.10.100-rt62.patch</span><br></pre></td></tr></table></figure>
+
+<p>make menuconfig</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">│ Symbol: USB_CONFIGFS_F_UVC [=n]                                                                     │</span><br><span class="line">│ Type  : bool                                                                                        │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:448                                                           │</span><br><span class="line">│   Prompt: USB Webcam function                                                                       │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4L2 [=n] &amp;&amp; VIDEO_ │</span><br><span class="line">│   Location:                                                                                         │</span><br><span class="line">│     -&gt; Device Drivers                                                                               │</span><br><span class="line">│       -&gt; USB support (USB_SUPPORT [=y])                                                             │</span><br><span class="line">│ (1)     -&gt; USB Gadget Support (USB_GADGET [=n])                                                     │</span><br><span class="line">│           -&gt; USB Gadget functions configurable through configfs (USB_CONFIGFS [=n])                 │</span><br><span class="line">│ Selects: VIDEOBUF2_VMALLOC [=n] &amp;&amp; USB_F_UVC [=n]                                                   │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│ Symbol: USB_F_UVC [=n]                                                                              │</span><br><span class="line">│ Type  : tristate                                                                                    │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:204                                                           │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n]                                                   │</span><br><span class="line">│ Selected by [n]:                                                                                    │</span><br><span class="line">│   - USB_CONFIGFS_F_UVC [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4 │</span><br><span class="line">│   - USB_G_WEBCAM [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; VIDEO_V4L2 [=n]</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><blockquote>
+<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
+</blockquote>
+<ol>
+<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
+<li>Linux 安装：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/<span class="built_in">local</span>/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br></pre></td></tr></table></figure></li>
+<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>参考资料：<br><a href="https://zhuanlan.zhihu.com/p/509248038">https://zhuanlan.zhihu.com/p/509248038</a><br><a href="https://blog.csdn.net/weixin_34408918/article/details/116737822">https://blog.csdn.net/weixin_34408918/article/details/116737822</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>WSL</tag>
       </tags>
   </entry>
   <entry>
