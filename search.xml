@@ -32,6 +32,49 @@
       </tags>
   </entry>
   <entry>
+    <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
+    <url>/2022/07/16/12/</url>
+    <content><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><div class="note info flat"><p>项目还在开发中，尽情期待！</p>
+<p>GitHub 链接：<a href="https://github.com/muyangplus/QuickVerifies">https://github.com/muyangplus/QuickVerifies</a> (私人状态，非授权无法打开)</p>
+</div>
+
+<h2 id="第一步：前期准备"><a href="#第一步：前期准备" class="headerlink" title="第一步：前期准备"></a>第一步：前期准备</h2><h3 id="安装：OpenCV-4-5-5"><a href="#安装：OpenCV-4-5-5" class="headerlink" title="安装：OpenCV 4.5.5"></a>安装：OpenCV 4.5.5</h3><h4 id="Windows-安装"><a href="#Windows-安装" class="headerlink" title="Windows 安装"></a>Windows 安装</h4><p>下载并安装到 D盘 根目录（安装到其他目录后请自行更改 CMakeLists.txt:10 的 OpenCV 路径）</p>
+<blockquote>
+<p><a href="https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe">https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe</a></p>
+</blockquote>
+<p>执行以下命令（安装到其他目录后请自行更改 OpenCV 路径）</p>
+<figure class="highlight cmd"><table><tr><td class="code"><pre><span class="line"><span class="built_in">copy</span> D:\opencv\build\x64\vc15\bin\opencv_world455.dll <span class="variable">%windir%</span>\system32\opencv_world455.dll</span><br><span class="line"><span class="built_in">copy</span> D:\opencv\build\x64\vc15\bin\opencv_world455d.dll <span class="variable">%windir%</span>\system32\opencv_world455d.dll</span><br></pre></td></tr></table></figure>
+
+<h4 id="Linux-安装"><a href="#Linux-安装" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y cmake g++ wget unzip</span><br><span class="line">sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev</span><br><span class="line">sudo apt-get install libgtk2.0-dev</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line"><span class="built_in">cd</span> /opt</span><br><span class="line">wget -O opencv-4.5.5.zip https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip</span><br><span class="line">unzip opencv-4.5.5.zip</span><br><span class="line"><span class="built_in">cd</span> opencv-4.5.5</span><br><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> ..</span><br><span class="line">sudo make -j8</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+
+<p>吐槽：真的很慢</p>
+<h3 id="安装：摄像头驱动"><a href="#安装：摄像头驱动" class="headerlink" title="安装：摄像头驱动"></a>安装：摄像头驱动</h3><p>Linux 系统请手动安装摄像头驱动</p>
+<h4 id="Linux-检测"><a href="#Linux-检测" class="headerlink" title="Linux 检测"></a>Linux 检测</h4><p>执行命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ls /dev/video*</span><br></pre></td></tr></table></figure>
+<p>则可看到”&#x2F;dev&#x2F;video*”表示成功驱动摄像头。否则请安装驱动并重插摄像头。</p>
+<h4 id="Windows-WLS2-下的-Linux-摄像头驱动安装"><a href="#Windows-WLS2-下的-Linux-摄像头驱动安装" class="headerlink" title="Windows WLS2 下的 Linux 摄像头驱动安装"></a>Windows WLS2 下的 Linux 摄像头驱动安装</h4><div class="note warning simple"><p>请自行参照<a href="https://muyangplus.github.io/2022/07/18/13/">这篇文章</a>重编译Linux内核<br>（我选择VMware：花这么长时间改内核都已经装好10台虚拟机了……）</p>
+</div>
+
+<h4 id="Linux-摄像头驱动安装"><a href="#Linux-摄像头驱动安装" class="headerlink" title="Linux 摄像头驱动安装"></a>Linux 摄像头驱动安装</h4><p>如果摄像头支持<a href="http://www.ideasonboard.org/uvc/">UVC驱动</a></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install cheese</span><br><span class="line">sudo apt install webcam</span><br><span class="line">cheese</span><br></pre></td></tr></table></figure>
+
+<p>如果你成功打开了摄像头则你已成功</p>
+<h2 id="第二步：从-GitHub仓库下载源代码"><a href="#第二步：从-GitHub仓库下载源代码" class="headerlink" title="第二步：从 GitHub仓库下载源代码"></a>第二步：从 GitHub仓库下载源代码</h2><blockquote>
+<p><a href="https://github.com/muyangplus/QuickVerifies.git">https://github.com/muyangplus/QuickVerifies.git</a></p>
+</blockquote>
+<h2 id="Enjoy-it"><a href="#Enjoy-it" class="headerlink" title="Enjoy it!"></a>Enjoy it!</h2>]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>神经网络</tag>
+        <tag>OpenCV</tag>
+        <tag>C++</tag>
+        <tag>实战项目</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>如何搭建一个高速私人网盘</title>
     <url>/2022/07/16/11/</url>
     <content><![CDATA[<h2 id="第一步：先期准备"><a href="#第一步：先期准备" class="headerlink" title="第一步：先期准备"></a>第一步：先期准备</h2><h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><p>请确保你有以下所有账号</p>
@@ -182,27 +225,40 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </tags>
   </entry>
   <entry>
-    <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
-    <url>/2022/07/16/12/</url>
-    <content><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><div class="note info flat"><p>项目还在开发中，尽情期待！</p>
-<p>GitHub 链接：<a href="https://github.com/muyangplus/QuickVerifies">https://github.com/muyangplus/QuickVerifies</a> (私人状态，非授权无法打开)</p>
+    <title>加密测试</title>
+    <url>/2022/02/02/5/</url>
+    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
+      <categories>
+        <category>加密内容</category>
+      </categories>
+      <tags>
+        <tag>加密内容</tag>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>如何让你的 Windows WSL 连接摄像头</title>
+    <url>/2022/07/18/13/</url>
+    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><div class="note danger simple"><p>本文尚未完工！！！</p>
 </div>
 
-<h2 id="第一步：前期准备"><a href="#第一步：前期准备" class="headerlink" title="第一步：前期准备"></a>第一步：前期准备</h2><h3 id="安装：OpenCV-4-5-5"><a href="#安装：OpenCV-4-5-5" class="headerlink" title="安装：OpenCV 4.5.5"></a>安装：OpenCV 4.5.5</h3><h4 id="Windows-安装"><a href="#Windows-安装" class="headerlink" title="Windows 安装"></a>Windows 安装</h4><p>下载并安装到 D盘 根目录（安装到其他目录后请自行更改 CMakeLists.txt:10 的 OpenCV 路径）</p>
-<blockquote>
-<p><a href="https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe">https://github.com/opencv/opencv/releases/download/4.5.5/opencv-4.5.5-vc14_vc15.exe</a></p>
-</blockquote>
-<h4 id="Linux-安装"><a href="#Linux-安装" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install -y cmake g++ wget unzip</span><br><span class="line">sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-dev libjpeg-dev libswscale-dev libtiff5-dev</span><br><span class="line">sudo apt-get install libgtk2.0-dev</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line"><span class="built_in">cd</span> ../opt</span><br><span class="line">wget https://github.com/opencv/opencv/archive/refs/tags/4.5.5.zip</span><br><span class="line">unzip opencv.zip</span><br><span class="line">rm 4.5.5.zip</span><br><span class="line"><span class="built_in">cd</span> opencv</span><br><span class="line">mkdir build</span><br><span class="line"><span class="built_in">cd</span> build</span><br><span class="line">sudo cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/<span class="built_in">local</span> ..</span><br><span class="line">sudo make -j8</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<h2 id="第一步：下载文件（本步骤尚不完全）"><a href="#第一步：下载文件（本步骤尚不完全）" class="headerlink" title="第一步：下载文件（本步骤尚不完全）"></a>第一步：下载文件（本步骤尚不完全）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你需要安装的东西</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line">sudo apt-get install libncurses*</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt-get build-dep linux</span><br><span class="line">sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot</span><br><span class="line"><span class="comment"># 创建：kernel文件夹</span></span><br><span class="line">mkdir ~/kernel</span><br><span class="line"><span class="comment"># 打开：kernel文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/kernel</span><br><span class="line"><span class="comment"># 清华大学镜像：linux内核</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 解压：linux内核</span></span><br><span class="line">tar -xf linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 清华大学镜像：rt补丁</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/projects/rt/5.10/older/patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 解压：rt补丁</span></span><br><span class="line">gunzip patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 打开：linux内核文件夹</span></span><br><span class="line"><span class="built_in">cd</span> linux-5.10.100</span><br><span class="line"><span class="comment"># 博主网盘镜像：wsl-config</span></span><br><span class="line">wget -O .config https://pan.muyangplus.vercel.app/api/name/.config?path=/博客附件/12/.config</span><br><span class="line"><span class="comment"># 安装：rt补丁</span></span><br><span class="line">patch -p1 &lt; ../patch-5.10.100-rt62.patch</span><br></pre></td></tr></table></figure>
 
-<p>吐槽：真的很慢</p>
-<h3 id="安装：摄像头驱动"><a href="#安装：摄像头驱动" class="headerlink" title="安装：摄像头驱动"></a>安装：摄像头驱动</h3><p>Linux 系统请手动安装摄像头驱动</p>
-<h4 id="Linux-检测"><a href="#Linux-检测" class="headerlink" title="Linux 检测"></a>Linux 检测</h4><p>执行命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ls /dev/video*</span><br></pre></td></tr></table></figure>
-<p>则可看到”&#x2F;dev&#x2F;video*”表示成功驱动摄像头。否则请安装驱动并重插摄像头。</p>
-<h4 id="Windows-WLS2-下的-Linux-安装"><a href="#Windows-WLS2-下的-Linux-安装" class="headerlink" title="Windows WLS2 下的 Linux 安装"></a>Windows WLS2 下的 Linux 安装</h4><div class="note warning simple"><p>Windows WLS2 使用了此方法也不支持摄像头，使自行参照网上的方法重编译Linux内核<br>以下内容仅可以让 Windows WLS2 连接除摄像头以外的 USB设备</p>
-</div>
+<p>make menuconfig</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">│ Symbol: USB_CONFIGFS_F_UVC [=n]                                                                     │</span><br><span class="line">│ Type  : bool                                                                                        │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:448                                                           │</span><br><span class="line">│   Prompt: USB Webcam function                                                                       │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4L2 [=n] &amp;&amp; VIDEO_ │</span><br><span class="line">│   Location:                                                                                         │</span><br><span class="line">│     -&gt; Device Drivers                                                                               │</span><br><span class="line">│       -&gt; USB support (USB_SUPPORT [=y])                                                             │</span><br><span class="line">│ (1)     -&gt; USB Gadget Support (USB_GADGET [=n])                                                     │</span><br><span class="line">│           -&gt; USB Gadget functions configurable through configfs (USB_CONFIGFS [=n])                 │</span><br><span class="line">│ Selects: VIDEOBUF2_VMALLOC [=n] &amp;&amp; USB_F_UVC [=n]                                                   │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│ Symbol: USB_F_UVC [=n]                                                                              │</span><br><span class="line">│ Type  : tristate                                                                                    │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:204                                                           │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n]                                                   │</span><br><span class="line">│ Selected by [n]:                                                                                    │</span><br><span class="line">│   - USB_CONFIGFS_F_UVC [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4 │</span><br><span class="line">│   - USB_G_WEBCAM [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; VIDEO_V4L2 [=n]</span><br></pre></td></tr></table></figure>
 
-<blockquote>
+<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><blockquote>
 <p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
 </blockquote>
 <ol>
@@ -213,20 +269,14 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
 <li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br></pre></td></tr></table></figure></li>
 <li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
 </ol>
-<h4 id="Linux-安装-1"><a href="#Linux-安装-1" class="headerlink" title="Linux 安装"></a>Linux 安装</h4><p>如果摄像头支持<a href="http://www.ideasonboard.org/uvc/">UVC驱动</a></p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt-get install cheese</span><br><span class="line">sudo apt install webcam</span><br><span class="line">cheese</span><br></pre></td></tr></table></figure>
-
-<p>如果你成功打开了摄像头则你已成功</p>
+<p>参考资料：<br><a href="https://zhuanlan.zhihu.com/p/509248038">https://zhuanlan.zhihu.com/p/509248038</a><br><a href="https://blog.csdn.net/weixin_34408918/article/details/116737822">https://blog.csdn.net/weixin_34408918/article/details/116737822</a></p>
 ]]></content>
       <categories>
-        <category>C++</category>
+        <category>Linux</category>
       </categories>
       <tags>
-        <tag>人工智能</tag>
-        <tag>神经网络</tag>
-        <tag>OpenCV</tag>
-        <tag>C++</tag>
-        <tag>实战项目</tag>
+        <tag>Linux</tag>
+        <tag>WSL</tag>
       </tags>
   </entry>
   <entry>
@@ -259,29 +309,6 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>加密测试</title>
-    <url>/2022/02/02/5/</url>
-    <content><![CDATA[<div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
-  <script id="hbeData" type="hbeData" data-hmacdigest="10cc022125b467ec35d66a395eac22108bb492d32e702528c3f8920fd608322d">bd25ed9264b080267271e137e33d0ce1951f5fbafb8d10f85092992d6139dd8b1d3eb851afe070e471b42eaa39d64958a1df3c2210dd12a233d58ca71cd056daa67e09dbcedb967c3c9ab3a4e634204024fdf261c93ca60d524fac6c1328bbb7d0ba802c4a768c213ff5a7de60effb8746d4128b7f9c016f2b406a63e68292ba22c3a670002d608c3208491c2c5c1980452628cdbc0f1f5d61a523d8aa5ef2b5809e4a8d80841d0dd63b555d78888fc19f825ac1014bee4567b61343c4f87e822f48de94a43a75debb4c7b2d2ecd3c7b</script>
-  <div class="hbe hbe-content">
-    <div class="hbe hbe-input hbe-input-default">
-      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
-      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
-        <span class="hbe hbe-input-label-content hbe-input-label-content-default">点我输入密码【密码:test】</span>
-      </label>
-    </div>
-  </div>
-</div>
-<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
-      <categories>
-        <category>加密内容</category>
-      </categories>
-      <tags>
-        <tag>加密内容</tag>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
