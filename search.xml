@@ -16,19 +16,22 @@
   </entry>
   <entry>
     <title>2022年6月学习记录</title>
-    <url>/2022/07/01/10/</url>
+    <url>/2022/06/01/10/</url>
     <content><![CDATA[<h2 id="Dev-c"><a href="#Dev-c" class="headerlink" title="Dev-c++"></a>Dev-c++</h2><p>编译参数</p>
 <figure class="highlight bat"><table><tr><td class="code"><pre><span class="line">-std=c++<span class="number">14</span> -Wall -fno-ms-extensions</span><br></pre></td></tr></table></figure>
 
-<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h2><ul>
+<h2 id="CMake"><a href="#CMake" class="headerlink" title="CMake"></a>CMake</h2><h2 id="解题公式"><a href="#解题公式" class="headerlink" title="解题公式"></a>解题公式</h2><h3 id="巧用位移解题"><a href="#巧用位移解题" class="headerlink" title="巧用位移解题"></a>巧用位移解题</h3><ul>
 <li>2的n次幂 &#x3D;&#x3D;&#x3D;&gt; (1&lt;&lt;n）</li>
 </ul>
+<h3 id="求最小公倍数"><a href="#求最小公倍数" class="headerlink" title="求最小公倍数"></a>求最小公倍数</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">gcd</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> a,<span class="keyword">long</span> <span class="keyword">long</span> b)</span></span>&#123;</span><br><span class="line">	cout&lt;&lt;<span class="string">&quot;a=&quot;</span>&lt;&lt;a&lt;&lt;<span class="string">&quot;,b=&quot;</span>&lt;&lt;b&lt;&lt;endl;</span><br><span class="line">	<span class="keyword">return</span> !(a%b)?b:<span class="built_in">gcd</span>(b,a%b);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
         <category>C++</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>学习</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -182,6 +185,37 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </tags>
   </entry>
   <entry>
+    <title>如何让你的 Windows WSL 连接摄像头</title>
+    <url>/2022/07/18/13/</url>
+    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><div class="note danger simple"><p>本文尚未完工！！！</p>
+</div>
+
+<h2 id="第一步：下载文件（本步骤尚不完全）"><a href="#第一步：下载文件（本步骤尚不完全）" class="headerlink" title="第一步：下载文件（本步骤尚不完全）"></a>第一步：下载文件（本步骤尚不完全）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你需要安装的东西</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line">sudo apt-get install libncurses*</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt-get build-dep linux</span><br><span class="line">sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot</span><br><span class="line"><span class="comment"># 创建：kernel文件夹</span></span><br><span class="line">mkdir ~/kernel</span><br><span class="line"><span class="comment"># 打开：kernel文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/kernel</span><br><span class="line"><span class="comment"># 清华大学镜像：linux内核</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 解压：linux内核</span></span><br><span class="line">tar -xf linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 清华大学镜像：rt补丁</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/projects/rt/5.10/older/patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 解压：rt补丁</span></span><br><span class="line">gunzip patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 打开：linux内核文件夹</span></span><br><span class="line"><span class="built_in">cd</span> linux-5.10.100</span><br><span class="line"><span class="comment"># 博主网盘镜像：wsl-config</span></span><br><span class="line">wget -O .config https://pan.muyangplus.vercel.app/api/name/.config?path=/博客附件/12/.config</span><br><span class="line"><span class="comment"># 安装：rt补丁</span></span><br><span class="line">patch -p1 &lt; ../patch-5.10.100-rt62.patch</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">│ Symbol: USB_CONFIGFS_F_UVC [=n]                                                                     │</span><br><span class="line">│ Type  : bool                                                                                        │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:448                                                           │</span><br><span class="line">│   Prompt: USB Webcam function                                                                       │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4L2 [=n] &amp;&amp; VIDEO_ │</span><br><span class="line">│   Location:                                                                                         │</span><br><span class="line">│     -&gt; Device Drivers                                                                               │</span><br><span class="line">│       -&gt; USB support (USB_SUPPORT [=y])                                                             │</span><br><span class="line">│ (1)     -&gt; USB Gadget Support (USB_GADGET [=n])                                                     │</span><br><span class="line">│           -&gt; USB Gadget functions configurable through configfs (USB_CONFIGFS [=n])                 │</span><br><span class="line">│ Selects: VIDEOBUF2_VMALLOC [=n] &amp;&amp; USB_F_UVC [=n]                                                   │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│ Symbol: USB_F_UVC [=n]                                                                              │</span><br><span class="line">│ Type  : tristate                                                                                    │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:204                                                           │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n]                                                   │</span><br><span class="line">│ Selected by [n]:                                                                                    │</span><br><span class="line">│   - USB_CONFIGFS_F_UVC [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4 │</span><br><span class="line">│   - USB_G_WEBCAM [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; VIDEO_V4L2 [=n]</span><br></pre></td></tr></table></figure>
+
+<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><blockquote>
+<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
+</blockquote>
+<ol>
+<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
+<li>Linux 安装：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/<span class="built_in">local</span>/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br></pre></td></tr></table></figure></li>
+<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
+<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br></pre></td></tr></table></figure></li>
+<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>参考资料：<br><a href="https://zhuanlan.zhihu.com/p/509248038">https://zhuanlan.zhihu.com/p/509248038</a><br><a href="https://blog.csdn.net/weixin_34408918/article/details/116737822">https://blog.csdn.net/weixin_34408918/article/details/116737822</a></p>
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>WSL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
     <url>/2022/07/16/12/</url>
     <content><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><div class="note info flat"><p>项目还在开发中，尽情期待！</p>
@@ -218,42 +252,39 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
         <category>C++</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>人工智能</tag>
         <tag>神经网络</tag>
         <tag>OpenCV</tag>
-        <tag>C++</tag>
         <tag>实战项目</tag>
       </tags>
   </entry>
   <entry>
-    <title>如何让你的 Windows WSL 连接摄像头</title>
-    <url>/2022/07/18/13/</url>
-    <content><![CDATA[<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><div class="note danger simple"><p>本文尚未完工！！！</p>
-</div>
+    <title>2022年7月学习记录</title>
+    <url>/2022/07/01/14/</url>
+    <content><![CDATA[<h2 id="刷题ing"><a href="#刷题ing" class="headerlink" title="刷题ing"></a>刷题ing</h2><h3 id="【模板】快速排序"><a href="#【模板】快速排序" class="headerlink" title="【模板】快速排序"></a>【模板】快速排序</h3><p>其实就是 STL 的 sort</p>
+<h4 id="题目链接："><a href="#题目链接：" class="headerlink" title="题目链接："></a>题目链接：</h4><ul>
+<li><a href="https://www.luogu.com.cn/problem/P1177">P1177 【模板】快速排序</a></li>
+</ul>
+<h4 id="动态演示："><a href="#动态演示：" class="headerlink" title="动态演示："></a>动态演示：</h4><p><img src="/./img/posts/14/QuickSort.gif"></p>
+<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><p>使用 C++ STL sort</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n=<span class="number">0</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">int</span> num[n+<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		cin&gt;&gt;num[i];</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="built_in">sort</span>(num,num+n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		cout&lt;&lt;num[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125; </span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="第一步：下载文件（本步骤尚不完全）"><a href="#第一步：下载文件（本步骤尚不完全）" class="headerlink" title="第一步：下载文件（本步骤尚不完全）"></a>第一步：下载文件（本步骤尚不完全）</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 你需要安装的东西</span></span><br><span class="line">sudo apt upgrade</span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt-get install pkg-config</span><br><span class="line">sudo apt-get install libncurses*</span><br><span class="line">sudo apt-get install flex</span><br><span class="line">sudo apt-get install bison</span><br><span class="line">sudo apt-get build-dep linux</span><br><span class="line">sudo apt-get install libncurses-dev flex bison openssl libssl-dev dkms libelf-dev libudev-dev libpci-dev libiberty-dev autoconf fakeroot</span><br><span class="line"><span class="comment"># 创建：kernel文件夹</span></span><br><span class="line">mkdir ~/kernel</span><br><span class="line"><span class="comment"># 打开：kernel文件夹</span></span><br><span class="line"><span class="built_in">cd</span> ~/kernel</span><br><span class="line"><span class="comment"># 清华大学镜像：linux内核</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/v5.x/linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 解压：linux内核</span></span><br><span class="line">tar -xf linux-5.10.60.tar.xz</span><br><span class="line"><span class="comment"># 清华大学镜像：rt补丁</span></span><br><span class="line">wget https://mirrors.tuna.tsinghua.edu.cn/kernel/projects/rt/5.10/older/patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 解压：rt补丁</span></span><br><span class="line">gunzip patch-5.10.100-rt62.patch.gz</span><br><span class="line"><span class="comment"># 打开：linux内核文件夹</span></span><br><span class="line"><span class="built_in">cd</span> linux-5.10.100</span><br><span class="line"><span class="comment"># 博主网盘镜像：wsl-config</span></span><br><span class="line">wget -O .config https://pan.muyangplus.vercel.app/api/name/.config?path=/博客附件/12/.config</span><br><span class="line"><span class="comment"># 安装：rt补丁</span></span><br><span class="line">patch -p1 &lt; ../patch-5.10.100-rt62.patch</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">make menuconfig</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">│ Symbol: USB_CONFIGFS_F_UVC [=n]                                                                     │</span><br><span class="line">│ Type  : bool                                                                                        │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:448                                                           │</span><br><span class="line">│   Prompt: USB Webcam function                                                                       │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4L2 [=n] &amp;&amp; VIDEO_ │</span><br><span class="line">│   Location:                                                                                         │</span><br><span class="line">│     -&gt; Device Drivers                                                                               │</span><br><span class="line">│       -&gt; USB support (USB_SUPPORT [=y])                                                             │</span><br><span class="line">│ (1)     -&gt; USB Gadget Support (USB_GADGET [=n])                                                     │</span><br><span class="line">│           -&gt; USB Gadget functions configurable through configfs (USB_CONFIGFS [=n])                 │</span><br><span class="line">│ Selects: VIDEOBUF2_VMALLOC [=n] &amp;&amp; USB_F_UVC [=n]                                                   │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│                                                                                                     │</span><br><span class="line">│ Symbol: USB_F_UVC [=n]                                                                              │</span><br><span class="line">│ Type  : tristate                                                                                    │</span><br><span class="line">│ Defined at drivers/usb/gadget/Kconfig:204                                                           │</span><br><span class="line">│   Depends on: USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n]                                                   │</span><br><span class="line">│ Selected by [n]:                                                                                    │</span><br><span class="line">│   - USB_CONFIGFS_F_UVC [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; USB_CONFIGFS [=n] &amp;&amp; VIDEO_V4 │</span><br><span class="line">│   - USB_G_WEBCAM [=n] &amp;&amp; USB_SUPPORT [=y] &amp;&amp; USB_GADGET [=n] &amp;&amp; VIDEO_V4L2 [=n]</span><br></pre></td></tr></table></figure>
+<p>手写快排</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span>* num,<span class="keyword">int</span> l,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mid=num[(l+r)/<span class="number">2</span>];</span><br><span class="line">    <span class="keyword">int</span> i=l,j=r;</span><br><span class="line">    <span class="keyword">do</span>&#123;</span><br><span class="line">        <span class="keyword">while</span>(num[i]&lt;mid) i++;</span><br><span class="line">        <span class="keyword">while</span>(num[j]&gt;mid) j--;</span><br><span class="line">        <span class="keyword">if</span>(i&lt;=j)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">swap</span>(num[i],num[j]);</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">while</span>(i&lt;=j);</span><br><span class="line">	<span class="keyword">if</span>(l&lt;j) <span class="built_in">QuickSort</span>(num,l,j);</span><br><span class="line">	<span class="keyword">if</span>(i&lt;r) <span class="built_in">QuickSort</span>(num,i,r);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n=<span class="number">0</span>;</span><br><span class="line">	cin&gt;&gt;n;</span><br><span class="line">	<span class="keyword">int</span> num[n+<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		cin&gt;&gt;num[i];</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">QuickSort</span>(num,<span class="number">1</span>,n);</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">		cout&lt;&lt;num[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="第二步："><a href="#第二步：" class="headerlink" title="第二步："></a>第二步：</h2><blockquote>
-<p>参考（明明是照搬）:<br><a href="https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb">https://docs.microsoft.com/zh-cn/windows/wsl/connect-usb</a></p>
-</blockquote>
-<ol>
-<li>Windows 安装：<a href="https://github.com/dorssel/usbipd-win/releases/download/v2.3.0/usbipd-win_2.3.0.msi">usbipd-win</a></li>
-<li>Linux 安装：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-5.4.0-77-generic hwdata</span><br><span class="line">sudo update-alternatives --install /usr/<span class="built_in">local</span>/bin/usbip usbip /usr/lib/linux-tools/5.4.0-77-generic/usbip 20</span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：找到你的摄像头<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl list</span><br></pre></td></tr></table></figure></li>
-<li>Windows 命令：选择要附加到 WSL 的设备总线 ID，然后运行此命令。 WSL 会提示你输入密码以运行 sudo 命令。 要附加的 Linux 发行版必须是默认分发版。 (参阅 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/basic-commands#set-default-linux-distribution">comands FOR WSL Doc Basic</a> ，以更改默认分发) 。<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl attach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
-<li>Linux 命令：打开 Ubuntu（或首选的 WSL 命令行），使用以下命令列出附加的 USB 设备：<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">lsusb</span><br></pre></td></tr></table></figure></li>
-<li>用完后请移除，否则 Windows 将无法继续使用<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">usbipd wsl detach -<span class="literal">-busid</span> &lt;busid&gt;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p>参考资料：<br><a href="https://zhuanlan.zhihu.com/p/509248038">https://zhuanlan.zhihu.com/p/509248038</a><br><a href="https://blog.csdn.net/weixin_34408918/article/details/116737822">https://blog.csdn.net/weixin_34408918/article/details/116737822</a></p>
+<h3 id="【模板】程序优化"><a href="#【模板】程序优化" class="headerlink" title="【模板】程序优化"></a>【模板】程序优化</h3><h4 id="题目链接：-1"><a href="#题目链接：-1" class="headerlink" title="题目链接："></a>题目链接：</h4><ul>
+<li><a href="https://www.luogu.com.cn/problem/P1923">P1923 【深基9.例4】求第 k 小的数</a></li>
+</ul>
+<h4 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="comment">//快读</span></span><br><span class="line"><span class="function"><span class="keyword">inline</span> <span class="keyword">int</span> <span class="title">read</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">char</span> ch=<span class="built_in">getchar</span>();</span><br><span class="line">	<span class="keyword">int</span> x=<span class="number">0</span>,f=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span>(ch&lt;<span class="string">&#x27;0&#x27;</span>||ch&gt;<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(ch==<span class="string">&#x27;-&#x27;</span>) f=<span class="number">-1</span>;</span><br><span class="line">        ch=<span class="built_in">getchar</span>();</span><br><span class="line">    &#125; </span><br><span class="line">	<span class="keyword">while</span>(<span class="string">&#x27;0&#x27;</span>&lt;=ch&amp;&amp;ch&lt;=<span class="string">&#x27;9&#x27;</span>)&#123;</span><br><span class="line">        x=x*<span class="number">10</span>+ch-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        ch=<span class="built_in">getchar</span>();</span><br><span class="line">    &#125; <span class="keyword">return</span> x*f;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> n,k;</span><br><span class="line">	n=<span class="built_in">read</span>();</span><br><span class="line">	k=<span class="built_in">read</span>();</span><br><span class="line">	<span class="keyword">int</span> num[n+<span class="number">2</span>]=&#123;<span class="number">0</span>&#125;; </span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123; </span><br><span class="line">		num[i]=<span class="built_in">read</span>();</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">nth_element</span>(num,num+k,num+n);</span><br><span class="line">	cout&lt;&lt;num[k];</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>Linux</category>
+        <category>C++</category>
       </categories>
       <tags>
-        <tag>Linux</tag>
-        <tag>WSL</tag>
+        <tag>C++</tag>
+        <tag>学习</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
@@ -272,7 +303,7 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
 </div>
 <script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">]]></content>
       <categories>
-        <category>加密内容</category>
+        <category>测试</category>
       </categories>
       <tags>
         <tag>加密内容</tag>
@@ -280,40 +311,8 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
       </tags>
   </entry>
   <entry>
-    <title>2022年3月学习记录</title>
-    <url>/2022/04/01/7/</url>
-    <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
-<h3 id="类型参数"><a href="#类型参数" class="headerlink" title="类型参数"></a>类型参数</h3><p>template<typename T><br>原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替。</p>
-<p>int len &#x3D; (int) sizeof(arr) &#x2F; sizeof(*arr);<br>计算动态数组长度公式：用数组占用空间除以指针占用空间</p>
-<h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
-<p>‘gets’ was not declared in this scope</p>
-<p>相关功能可以用fgets()函数代替。</p>
-<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&lt;algorithm&gt;</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
-<h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
-<p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
-<h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
-<h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
-</div>
-
-<div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
-</div>
-
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="P真题"><a href="#P真题" class="headerlink" title="P真题"></a>P真题</h3><p><a href="https://ti.luogu.com.cn/">https://ti.luogu.com.cn</a></p>
-<h3 id="几种排序算法"><a href="#几种排序算法" class="headerlink" title="几种排序算法"></a>几种排序算法</h3><p><a href="https://www.cnblogs.com/rope/p/12119391.html">https://www.cnblogs.com/rope/p/12119391.html</a></p>
-]]></content>
-      <categories>
-        <category>C++</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022年4月学习记录 - 时间复杂度总结</title>
-    <url>/2022/05/01/8/</url>
+    <url>/2022/04/01/8/</url>
     <content><![CDATA[<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><h3 id="常见的时间复杂度"><a href="#常见的时间复杂度" class="headerlink" title="常见的时间复杂度"></a>常见的时间复杂度</h3><div class="note info simple"><p>1.常数阶O(1)<br>2.对数阶O(log2n)<br>3.线性阶O(n)<br>4.线性对数阶O(nlog2n)<br>5.平方阶O(n2)<br>6.立方阶O(n3)<br>7.k次方阶O(nk)<br>8.指数阶O(2n)</p>
 </div>
 
@@ -350,12 +349,48 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
         <category>C++</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>学习</tag>
+        <tag>时间复杂度</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>2022年3月学习记录</title>
+    <url>/2022/03/01/7/</url>
+    <content><![CDATA[<h2 id="使用技巧"><a href="#使用技巧" class="headerlink" title="使用技巧"></a>使用技巧</h2><h3 id="变量声明"><a href="#变量声明" class="headerlink" title="变量声明"></a>变量声明</h3><p>声明变量时一定要赋值！！！！！<br>未定义的一维数组放在 int main() 里会生成随机数！</p>
+<h3 id="类型参数"><a href="#类型参数" class="headerlink" title="类型参数"></a>类型参数</h3><p>template<typename T><br>原来使用 int、float、char 等内置类型的地方，都可以用类型参数来代替。</p>
+<p>int len &#x3D; (int) sizeof(arr) &#x2F; sizeof(*arr);<br>计算动态数组长度公式：用数组占用空间除以指针占用空间</p>
+<h3 id="get函数"><a href="#get函数" class="headerlink" title="get函数"></a>get函数</h3><p>gets()函数在C++14中被完全删除了，编译时会报错：</p>
+<p>‘gets’ was not declared in this scope</p>
+<p>相关功能可以用fgets()函数代替。</p>
+<h3 id="命名空间"><a href="#命名空间" class="headerlink" title="命名空间"></a>命名空间</h3><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">&lt;algorithm&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h2 id="算法相关"><a href="#算法相关" class="headerlink" title="算法相关"></a>算法相关</h2><h3 id="递归算法"><a href="#递归算法" class="headerlink" title="递归算法"></a>递归算法</h3><p>时间复杂程度：O(log2n)<br>注意：一定要设置结束条件！！！<br>使用方法：<br>1.return 函数本身<br>2.直接调用</p>
+<h3 id="杨辉三角"><a href="#杨辉三角" class="headerlink" title="杨辉三角"></a>杨辉三角</h3><p>公式一：<br>a[i][j] &#x3D; a[i - 1][j] + a[i - 1][j - 1];</p>
+<p>公式二：<br>sum &#x3D; sum * (i - j + 1)&#x2F;(j - 1);</p>
+<h3 id="信息学奥赛一本通在线题库"><a href="#信息学奥赛一本通在线题库" class="headerlink" title="信息学奥赛一本通在线题库"></a>信息学奥赛一本通在线题库</h3><p><a href="http://ybt.ssoier.cn:8088/">http://ybt.ssoier.cn:8088</a></p>
+<h2 id="一些题目"><a href="#一些题目" class="headerlink" title="一些题目"></a>一些题目</h2><div class="note info no-icon flat"><p>以下排序算法中，不需要进行关键字比较操作的算法是（ ）。<br> A. 基数排序<br> B. 冒泡排序<br> C. 堆排序<br> D. 直接插入排序</p>
+</div>
+
+<div class="note info no-icon flat"><p>设 x&#x3D;true, y&#x3D;true, z&#x3D;false，以下逻辑运算表达式值为真的是（ ）。<br> A. (y∨z)∧x∧z<br> B. x∧(z∨y) ∧z<br> C. (x∧y) ∧z<br> D. (x∧y)∨(z∨x)</p>
+</div>
+
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="P真题"><a href="#P真题" class="headerlink" title="P真题"></a>P真题</h3><p><a href="https://ti.luogu.com.cn/">https://ti.luogu.com.cn</a></p>
+<h3 id="几种排序算法"><a href="#几种排序算法" class="headerlink" title="几种排序算法"></a>几种排序算法</h3><p><a href="https://www.cnblogs.com/rope/p/12119391.html">https://www.cnblogs.com/rope/p/12119391.html</a></p>
+]]></content>
+      <categories>
+        <category>C++</category>
+      </categories>
+      <tags>
+        <tag>C++</tag>
+        <tag>学习</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
   <entry>
     <title>2022年5月学习记录</title>
-    <url>/2022/06/01/9/</url>
+    <url>/2022/05/01/9/</url>
     <content><![CDATA[<h2 id="OpenCV"><a href="#OpenCV" class="headerlink" title="OpenCV"></a>OpenCV</h2><h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><p><a href="https://blog.csdn.net/weixin_44297922/article/details/121496280">基于Opencv实现的简易汉字识别</a></p>
 <p><a href="https://blog.csdn.net/iracer/article/details/116051674">OpenCV4机器学习算法原理与编程实战（附部分模型下载地址）</a></p>
 <p><a href="https://blog.csdn.net/hacker_NO_007/article/details/123470483">戴口罩情境下的人脸识别demo</a></p>
@@ -376,7 +411,9 @@ driveApi: &quot;https://microsoftgraph.chinacloudapi.cn/v1.0/me/drive&quot;,
         <category>C++</category>
       </categories>
       <tags>
+        <tag>C++</tag>
         <tag>学习</tag>
+        <tag>算法</tag>
       </tags>
   </entry>
 </search>
