@@ -1,0 +1,140 @@
+﻿
+<!-- 这是 PCL2 的主页自定义文件。你可以通过修改这个文件来自定义 PCL2 主页：添加文本、打开网页、启动游戏，等等。
+     如果你倒腾这个文件把 PCL2 玩炸了，把这个文件直接删除就行了。
+     如果你懂得 WPF 的布局文件编写，你甚至可以做出不少的新玩意儿…… -->
+
+<local:MyCard Title="沐阳先生">
+    <StackPanel HorizontalAlignment="Left" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Blog" EventType="打开网页" EventData="https://www.muyangplus.top" ToolTip="这是我的 个人博客 ，欢迎常来哦~" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="BiliBili" EventType="打开网页" EventData="https://space.bilibili.com/313199379" ToolTip="这是我的 BiliBili 主页，欢迎常来哦~"/>
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Right" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Github" EventType="打开网页" EventData="https://github.com/muyangplus" ToolTip="这是我的 Github 主页，欢迎常来哦~"/>
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Left" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="爱发电" EventType="打开网页" EventData="https://afdian.net/@muyangplus" ToolTip="这是我的 爱发电 主页，欢迎常来哦~" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="邮箱" EventType="打开文件" EventData="mailto:muyangplus@outlook.com" ToolTip="这是我的 联系邮箱，欢迎骚扰（bushi）" />
+    </StackPanel>
+</local:MyCard>
+
+<StackPanel Margin="0,10,0,0"></StackPanel>
+
+<local:MyCard Title="常用网站">
+    <StackPanel HorizontalAlignment="Left" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Minecraft 官网" EventType="打开网页" EventData="https://www.minecraft.net" ToolTip="来这里买正版 Minecraft" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="MCBBS" EventType="弹出窗口" EventData="MCBBS|已下线" ToolTip="Minecraft(我的世界)中文论坛" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Right" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="MC 百科" EventType="打开网页" EventData="https://www.mcmod.cn" ToolTip="最大的Minecraft中文MOD百科" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Left" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Curseforge" EventType="打开网页" EventData="https://www.curseforge.com/minecraft" ToolTip="最大的Minecraft资源下载平台" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="Little Skin" EventType="打开网页" EventData="https://littleskin.cn" ToolTip="国内第二大 Minecraft 皮肤（外置登录）站。" />
+    </StackPanel>
+</local:MyCard>
+
+<StackPanel Margin="0,10,0,0"></StackPanel>
+
+<local:MyCard Title="快捷启动" >
+    <StackPanel HorizontalAlignment="Left" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.7.10" EventType="启动游戏" EventData="1.7.10" ToolTip="启动游戏 1.7.10" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.8.9" EventType="启动游戏" EventData="1.8.9" ToolTip="启动游戏 1.8.9" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Right" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.12.2" EventType="启动游戏" EventData="1.12.2" ToolTip="启动游戏 1.12.2" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Left" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.16.5" EventType="启动游戏" EventData="1.16.5" ToolTip="启动游戏 1.16.5" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Center" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.18.2" EventType="启动游戏" EventData="1.18.2" ToolTip="启动游戏 1.18.2" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Right" Margin="25,80,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                   Text="1.19.3" EventType="启动游戏" EventData="1.19.3" ToolTip="启动游戏 1.19.3" />
+    </StackPanel>
+    <StackPanel HorizontalAlignment="Left" Margin="25,120,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0"
+                 Text="Hypixel" EventType="启动游戏" EventData="1.8.9|mc.hypixel.net" ToolTip="1.8.9 - Hypixel" />
+    </StackPanel>
+</local:MyCard>
+
+<StackPanel Margin="0,10,0,0"></StackPanel>
+<local:MyCard Title="快捷工具" >
+    <StackPanel HorizontalAlignment="Left" Margin="25,40,23,15">
+        <local:MyButton Width="125" Height="35" HorizontalAlignment="Left" Padding="13,0,13,0" ColorType="Highlight"
+                   Text="刷新主页" EventType="刷新主页" ToolTip="联网更新主页并刷新信息" />
+    </StackPanel>
+</local:MyCard>
+
+<StackPanel Margin="0,10,0,0"></StackPanel>
+
+<local:MyCard Title="广告" >
+    <StackPanel HorizontalAlignment="Left" Margin="25,40,23,15">
+        <local:MyHint IsWarn="False" Text="广告位招租！" />
+    </StackPanel>
+</local:MyCard>
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Background：调整背景颜色（使用类似 Background="{DynamicResource ColorBrush5}" 的格式以调用 PCL2 当前的主题颜色，修改末尾的数字编号以改变颜色浓度）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ 
+Image（图片）：
+ - Source：要显示的图片的网址
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ 
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ 
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ 
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+
+-->
