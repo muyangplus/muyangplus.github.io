@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>沐阳先生的博客</title>
+  <icon>https://www.muyangplus.top/icon.png</icon>
+  <subtitle>沐阳先生的博客！</subtitle>
+  <link href="https://www.muyangplus.top/atom.xml" rel="self"/>
+  
+  <link href="https://www.muyangplus.top/"/>
+  <updated>2025-09-04T13:54:21.454Z</updated>
+  <id>https://www.muyangplus.top/</id>
+  
+  <author>
+    <name>沐阳先生</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2024-2025学年竞赛成果总结</title>
+    <link href="https://www.muyangplus.top/posts/awardist/"/>
+    <id>https://www.muyangplus.top/posts/awardist/</id>
+    <published>2025-07-03T20:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">我的成长进步之路。</summary>
+    
+    
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/categories/%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="ACM" scheme="https://www.muyangplus.top/tags/ACM/"/>
+    
+    <category term="OI" scheme="https://www.muyangplus.top/tags/OI/"/>
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/tags/%E7%AB%9E%E8%B5%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2025年第十六届蓝桥杯比赛记录</title>
+    <link href="https://www.muyangplus.top/posts/os84nc7s/"/>
+    <id>https://www.muyangplus.top/posts/os84nc7s/</id>
+    <published>2025-07-03T16:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">我的竞赛之路。</summary>
+    
+    
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/categories/%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="OI" scheme="https://www.muyangplus.top/tags/OI/"/>
+    
+    <category term="蓝桥杯" scheme="https://www.muyangplus.top/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>OIer 的退役</title>
+    <link href="https://www.muyangplus.top/posts/endofoier/"/>
+    <id>https://www.muyangplus.top/posts/endofoier/</id>
+    <published>2023-12-12T21:30:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">我的信息学奥赛之路。</summary>
+    
+    
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/categories/%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="OI" scheme="https://www.muyangplus.top/tags/OI/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSP-S/NOIP 2023 比赛合集</title>
+    <link href="https://www.muyangplus.top/posts/p8ux9ia6/"/>
+    <id>https://www.muyangplus.top/posts/p8ux9ia6/</id>
+    <published>2023-11-18T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">我的信息学奥赛之路。</summary>
+    
+    
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/categories/%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="OI" scheme="https://www.muyangplus.top/tags/OI/"/>
+    
+    <category term="CSP-S" scheme="https://www.muyangplus.top/tags/CSP-S/"/>
+    
+    <category term="NOIP" scheme="https://www.muyangplus.top/tags/NOIP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 图的定义和术语</title>
+    <link href="https://www.muyangplus.top/posts/tude98j8/"/>
+    <id>https://www.muyangplus.top/posts/tude98j8/</id>
+    <published>2023-09-22T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">图的定义和术语</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="图" scheme="https://www.muyangplus.top/tags/%E5%9B%BE/"/>
+    
+    <category term="定义" scheme="https://www.muyangplus.top/tags/%E5%AE%9A%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 哈夫曼树及其运用</title>
+    <link href="https://www.muyangplus.top/posts/nis73hu8/"/>
+    <id>https://www.muyangplus.top/posts/nis73hu8/</id>
+    <published>2023-09-09T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">哈夫曼树</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="树" scheme="https://www.muyangplus.top/tags/%E6%A0%91/"/>
+    
+    <category term="哈夫曼树" scheme="https://www.muyangplus.top/tags/%E5%93%88%E5%A4%AB%E6%9B%BC%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 树和森林</title>
+    <link href="https://www.muyangplus.top/posts/je8dn5hy/"/>
+    <id>https://www.muyangplus.top/posts/je8dn5hy/</id>
+    <published>2023-09-03T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">树和森林</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="树" scheme="https://www.muyangplus.top/tags/%E6%A0%91/"/>
+    
+    <category term="森林" scheme="https://www.muyangplus.top/tags/%E6%A3%AE%E6%9E%97/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 线索二叉树</title>
+    <link href="https://www.muyangplus.top/posts/zndi38us/"/>
+    <id>https://www.muyangplus.top/posts/zndi38us/</id>
+    <published>2023-09-02T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">线索二叉树</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="二叉树" scheme="https://www.muyangplus.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 二叉树遍历算法分析及运用</title>
+    <link href="https://www.muyangplus.top/posts/hu7yg98s/"/>
+    <id>https://www.muyangplus.top/posts/hu7yg98s/</id>
+    <published>2023-09-01T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">二叉树算法分析</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="二叉树" scheme="https://www.muyangplus.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 遍历二叉树基础</title>
+    <link href="https://www.muyangplus.top/posts/snd9tnx8/"/>
+    <id>https://www.muyangplus.top/posts/snd9tnx8/</id>
+    <published>2023-08-18T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">遍历二叉树基础</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="二叉树" scheme="https://www.muyangplus.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 二叉树的性质和储存结构</title>
+    <link href="https://www.muyangplus.top/posts/sdb8uh4b/"/>
+    <id>https://www.muyangplus.top/posts/sdb8uh4b/</id>
+    <published>2023-08-15T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">二叉树的性质和储存结构</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="二叉树" scheme="https://www.muyangplus.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2023年学习记录 - 树和二叉树的定义</title>
+    <link href="https://www.muyangplus.top/posts/sd348fj4/"/>
+    <id>https://www.muyangplus.top/posts/sd348fj4/</id>
+    <published>2023-08-14T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">树和二叉树的定义</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="数据结构与算法基础" scheme="https://www.muyangplus.top/categories/C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%80/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="数据结构" scheme="https://www.muyangplus.top/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="二叉树" scheme="https://www.muyangplus.top/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/"/>
+    
+    <category term="树" scheme="https://www.muyangplus.top/tags/%E6%A0%91/"/>
+    
+    <category term="定义" scheme="https://www.muyangplus.top/tags/%E5%AE%9A%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>API 应用发布页</title>
+    <link href="https://www.muyangplus.top/posts/iamyyapi/"/>
+    <id>https://www.muyangplus.top/posts/iamyyapi/</id>
+    <published>2023-07-22T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">API 应用发布页</summary>
+    
+    
+    
+    <category term="公告" scheme="https://www.muyangplus.top/categories/%E5%85%AC%E5%91%8A/"/>
+    
+    
+    <category term="API" scheme="https://www.muyangplus.top/tags/API/"/>
+    
+    <category term="GitHub" scheme="https://www.muyangplus.top/tags/GitHub/"/>
+    
+    <category term="Vercel" scheme="https://www.muyangplus.top/tags/Vercel/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创题目】 A ? B Problem（升级版）</title>
+    <link href="https://www.muyangplus.top/posts/yctm0002/"/>
+    <id>https://www.muyangplus.top/posts/yctm0002/</id>
+    <published>2023-04-26T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">原创题目：A ? B Problem（升级版）</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="题目" scheme="https://www.muyangplus.top/categories/C/%E9%A2%98%E7%9B%AE/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="题目" scheme="https://www.muyangplus.top/tags/%E9%A2%98%E7%9B%AE/"/>
+    
+    <category term="原创" scheme="https://www.muyangplus.top/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="分支结构" scheme="https://www.muyangplus.top/tags/%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="循环结构" scheme="https://www.muyangplus.top/tags/%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="字符串" scheme="https://www.muyangplus.top/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程思维周练(3)</title>
+    <link href="https://www.muyangplus.top/posts/sad23j8s/"/>
+    <id>https://www.muyangplus.top/posts/sad23j8s/</id>
+    <published>2023-03-31T20:30:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">编程思维周练</summary>
+    
+    
+    
+    <category term="社团" scheme="https://www.muyangplus.top/categories/%E7%A4%BE%E5%9B%A2/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="社团" scheme="https://www.muyangplus.top/tags/%E7%A4%BE%E5%9B%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>【原创题目】 A ? B Problem</title>
+    <link href="https://www.muyangplus.top/posts/yctm0001/"/>
+    <id>https://www.muyangplus.top/posts/yctm0001/</id>
+    <published>2023-03-16T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">原创题目：A ? B Problem</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    <category term="题目" scheme="https://www.muyangplus.top/categories/C/%E9%A2%98%E7%9B%AE/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="题目" scheme="https://www.muyangplus.top/tags/%E9%A2%98%E7%9B%AE/"/>
+    
+    <category term="原创" scheme="https://www.muyangplus.top/tags/%E5%8E%9F%E5%88%9B/"/>
+    
+    <category term="分支结构" scheme="https://www.muyangplus.top/tags/%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84/"/>
+    
+    <category term="循环结构" scheme="https://www.muyangplus.top/tags/%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程思维周练(2)</title>
+    <link href="https://www.muyangplus.top/posts/27bee4fc/"/>
+    <id>https://www.muyangplus.top/posts/27bee4fc/</id>
+    <published>2023-03-13T20:30:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">编程思维周练</summary>
+    
+    
+    
+    <category term="社团" scheme="https://www.muyangplus.top/categories/%E7%A4%BE%E5%9B%A2/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="社团" scheme="https://www.muyangplus.top/tags/%E7%A4%BE%E5%9B%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程思维周练(1)</title>
+    <link href="https://www.muyangplus.top/posts/c93b73f/"/>
+    <id>https://www.muyangplus.top/posts/c93b73f/</id>
+    <published>2023-03-06T20:30:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">编程思维周练</summary>
+    
+    
+    
+    <category term="社团" scheme="https://www.muyangplus.top/categories/%E7%A4%BE%E5%9B%A2/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="社团" scheme="https://www.muyangplus.top/tags/%E7%A4%BE%E5%9B%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSP-S/NOIP 2022 比赛合集</title>
+    <link href="https://www.muyangplus.top/posts/c917ed75/"/>
+    <id>https://www.muyangplus.top/posts/c917ed75/</id>
+    <published>2022-11-01T21:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">我的信息学奥赛之路。</summary>
+    
+    
+    
+    <category term="竞赛" scheme="https://www.muyangplus.top/categories/%E7%AB%9E%E8%B5%9B/"/>
+    
+    
+    <category term="OI" scheme="https://www.muyangplus.top/tags/OI/"/>
+    
+    <category term="CSP-S" scheme="https://www.muyangplus.top/tags/CSP-S/"/>
+    
+    <category term="NOIP" scheme="https://www.muyangplus.top/tags/NOIP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年9月学习记录 - 时间复杂度题目训练</title>
+    <link href="https://www.muyangplus.top/posts/bfc79706/"/>
+    <id>https://www.muyangplus.top/posts/bfc79706/</id>
+    <published>2022-09-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">c++学习记录第七期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="时间复杂度" scheme="https://www.muyangplus.top/tags/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年8月学习记录 - STL</title>
+    <link href="https://www.muyangplus.top/posts/b67e9d81/"/>
+    <id>https://www.muyangplus.top/posts/b67e9d81/</id>
+    <published>2022-08-16T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第六期半</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="STL" scheme="https://www.muyangplus.top/tags/STL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>编程思维社团</title>
+    <link href="https://www.muyangplus.top/posts/pdgzxxst/"/>
+    <id>https://www.muyangplus.top/posts/pdgzxxst/</id>
+    <published>2022-08-14T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">由我发起的社团</summary>
+    
+    
+    
+    <category term="社团" scheme="https://www.muyangplus.top/categories/%E7%A4%BE%E5%9B%A2/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="社团" scheme="https://www.muyangplus.top/tags/%E7%A4%BE%E5%9B%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年8月学习记录 - 队列、栈及其应用</title>
+    <link href="https://www.muyangplus.top/posts/8956865/"/>
+    <id>https://www.muyangplus.top/posts/8956865/</id>
+    <published>2022-08-10T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第六期半</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="队列" scheme="https://www.muyangplus.top/tags/%E9%98%9F%E5%88%97/"/>
+    
+    <category term="栈" scheme="https://www.muyangplus.top/tags/%E6%A0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年8月学习记录 - 动态规划专练</title>
+    <link href="https://www.muyangplus.top/posts/86fa511b/"/>
+    <id>https://www.muyangplus.top/posts/86fa511b/</id>
+    <published>2022-08-04T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第六期半</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+    <category term="动态规划" scheme="https://www.muyangplus.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+    <category term="DP" scheme="https://www.muyangplus.top/tags/DP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年8月学习记录</title>
+    <link href="https://www.muyangplus.top/posts/c728e72e/"/>
+    <id>https://www.muyangplus.top/posts/c728e72e/</id>
+    <published>2022-08-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第六期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何让你的 Windows WSL 连接摄像头</title>
+    <link href="https://www.muyangplus.top/posts/c70684b4/"/>
+    <id>https://www.muyangplus.top/posts/c70684b4/</id>
+    <published>2022-07-18T13:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">如何让你的 Windows WSL 连接摄像头</summary>
+    
+    
+    
+    <category term="Linux" scheme="https://www.muyangplus.top/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://www.muyangplus.top/tags/Linux/"/>
+    
+    <category term="WSL" scheme="https://www.muyangplus.top/tags/WSL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>QuickVerifies：一个基于 OpenCV 的健康验证系统</title>
+    <link href="https://www.muyangplus.top/posts/d0e7b156/"/>
+    <id>https://www.muyangplus.top/posts/d0e7b156/</id>
+    <published>2022-07-16T13:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">一个基于 OpenCV 的人工智能系统。实现了人脸识别，口罩识别，健康码识别等功能，让人们在短时间内进出同一场所时不需要重复亮码、扫码。旨在方便人民的日常生活。</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="人工智能" scheme="https://www.muyangplus.top/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/"/>
+    
+    <category term="神经网络" scheme="https://www.muyangplus.top/tags/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    
+    <category term="OpenCV" scheme="https://www.muyangplus.top/tags/OpenCV/"/>
+    
+    <category term="实战项目" scheme="https://www.muyangplus.top/tags/%E5%AE%9E%E6%88%98%E9%A1%B9%E7%9B%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何搭建一个高速私人网盘</title>
+    <link href="https://www.muyangplus.top/posts/a683aef4/"/>
+    <id>https://www.muyangplus.top/posts/a683aef4/</id>
+    <published>2022-07-16T00:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">利用 OneDrive、github、vercel和Upstash 搭建一个免费的私人网盘</summary>
+    
+    
+    
+    <category term="干货" scheme="https://www.muyangplus.top/categories/%E5%B9%B2%E8%B4%A7/"/>
+    
+    <category term="教程" scheme="https://www.muyangplus.top/categories/%E5%B9%B2%E8%B4%A7/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="GitHub" scheme="https://www.muyangplus.top/tags/GitHub/"/>
+    
+    <category term="Vercel" scheme="https://www.muyangplus.top/tags/Vercel/"/>
+    
+    <category term="教程" scheme="https://www.muyangplus.top/tags/%E6%95%99%E7%A8%8B/"/>
+    
+    <category term="OneDrive" scheme="https://www.muyangplus.top/tags/OneDrive/"/>
+    
+    <category term="Upstash" scheme="https://www.muyangplus.top/tags/Upstash/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年7月学习记录</title>
+    <link href="https://www.muyangplus.top/posts/49c28014/"/>
+    <id>https://www.muyangplus.top/posts/49c28014/</id>
+    <published>2022-07-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第五期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年6月学习记录</title>
+    <link href="https://www.muyangplus.top/posts/e7aa1185/"/>
+    <id>https://www.muyangplus.top/posts/e7aa1185/</id>
+    <published>2022-06-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第四期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年5月学习记录</title>
+    <link href="https://www.muyangplus.top/posts/ce62a577/"/>
+    <id>https://www.muyangplus.top/posts/ce62a577/</id>
+    <published>2022-05-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第三期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年4月学习记录 - 时间复杂度总结</title>
+    <link href="https://www.muyangplus.top/posts/9685fddf/"/>
+    <id>https://www.muyangplus.top/posts/9685fddf/</id>
+    <published>2022-04-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第二期。时间复杂度总结。</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="时间复杂度" scheme="https://www.muyangplus.top/tags/%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2022年3月学习记录</title>
+    <link href="https://www.muyangplus.top/posts/9df3cc93/"/>
+    <id>https://www.muyangplus.top/posts/9df3cc93/</id>
+    <published>2022-03-01T08:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.452Z</updated>
+    
+    
+    <summary type="html">c++学习记录第一期</summary>
+    
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/categories/C/"/>
+    
+    
+    <category term="C++" scheme="https://www.muyangplus.top/tags/C/"/>
+    
+    <category term="学习" scheme="https://www.muyangplus.top/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="算法" scheme="https://www.muyangplus.top/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>加密测试</title>
+    <link href="https://www.muyangplus.top/posts/53963325/"/>
+    <id>https://www.muyangplus.top/posts/53963325/</id>
+    <published>2022-02-02T12:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">加密测试</summary>
+    
+    
+    
+    <category term="测试" scheme="https://www.muyangplus.top/categories/%E6%B5%8B%E8%AF%95/"/>
+    
+    
+    <category term="加密内容" scheme="https://www.muyangplus.top/tags/%E5%8A%A0%E5%AF%86%E5%86%85%E5%AE%B9/"/>
+    
+    <category term="测试" scheme="https://www.muyangplus.top/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>建站公告</title>
+    <link href="https://www.muyangplus.top/posts/43ee71e3/"/>
+    <id>https://www.muyangplus.top/posts/43ee71e3/</id>
+    <published>2022-01-01T00:00:00.000Z</published>
+    <updated>2025-09-04T13:54:21.454Z</updated>
+    
+    
+    <summary type="html">公告</summary>
+    
+    
+    
+    <category term="站务" scheme="https://www.muyangplus.top/categories/%E7%AB%99%E5%8A%A1/"/>
+    
+    
+    <category term="公告" scheme="https://www.muyangplus.top/tags/%E5%85%AC%E5%91%8A/"/>
+    
+  </entry>
+  
+</feed>

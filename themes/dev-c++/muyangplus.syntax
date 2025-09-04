@@ -1,0 +1,21 @@
+[Editor.Custom]
+Assembler           =   49407       ,   2238503 ,0,0,0
+Character           =   49407       ,   2238503 ,0,0,0
+Comment             =   6189428     ,   2238503 ,0,0,0
+Float               =   16744878    ,   2238503 ,0,0,0
+Hexadecimal         =   16744878    ,   2238503 ,0,0,0
+Identifier          =   14211288    ,   2238503 ,0,0,0
+Illegal Char        =   7481337     ,   2238503 ,0,0,0
+Number              =   16744878    ,   2238503 ,0,0,0
+Octal               =   16744878    ,   2238503 ,0,0,0
+Preprocessor        =   11585870    ,   2238503 ,0,0,0
+Reserved Word       =   15773696    ,   2238503 ,0,0,0
+Space               =   2238503     ,   2238503 ,0,0,0
+String              =   49407       ,   2238503 ,0,0,0
+Symbol              =   14857357    ,   2238503 ,0,0,0
+Selected text       =   16777215    ,   14248205
+Gutter              =   9146768     ,   3552302
+Breakpoints         =   16777215    ,   7481337
+Error line          =   15921906    ,   7481337
+Active breakpoints  =   16777215    ,   12611584
+Folding lines       =   9146768     ,   3552302
